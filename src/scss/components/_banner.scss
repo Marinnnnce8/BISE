@@ -1,0 +1,68 @@
+.banner {
+
+	.uk-container-xsmall {
+		margin-top: -$global-xlarge-margin;
+
+		>div>span {
+			position: absolute;
+			top: 50%;
+			font-size: .78rem;
+			line-height: 1.5;
+
+			&::before {
+				position: absolute;
+				height: 1px;
+				background-color: $global-color;
+				content: '';
+				width: $global-medium-margin;
+				display: block;
+			}
+
+			&:first-of-type {
+				right: 100%;
+				padding-right: 2 * $global-gutter;
+
+				&::before {
+					right: $global-small-margin;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+
+				>span {
+					font-family: $font-heavy;
+					font-weight: $medium;
+				}
+			}
+
+			&:last-of-type {
+				left: 100%;
+				width: 200px;
+				padding-left: 2 * $global-gutter;
+
+				&::before {
+					left: $global-small-margin;
+					top: $global-small-margin + 3px;
+				}
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+
+		&::before {
+			height: 75%;
+		}
+
+		.uk-overlay {
+			padding-bottom: $global-medium-margin;
+		}
+	}
+
+	@media (min-width: $breakpoint-large) {
+
+
+		.uk-overlay {
+			padding-bottom: $global-large-margin;
+		}
+	}
+}

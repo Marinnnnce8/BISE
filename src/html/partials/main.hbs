@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-gb" class="template-{{page.template.name}}">
+<head>
+	<meta name="robots" content="noindex, nofollow">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>{{page.meta_title}}</title>
+
+	<meta name="description" content="This page is called {{page.title}}">
+
+	<link rel="preload" as="script" href="./js/uikit-core.min.js">
+	<link rel="preload" as="script" href="./js/nbkit.min.js">
+
+	<link rel="shortcut icon" href="./favicon.ico">
+
+	<link rel="stylesheet" href="./css/uikit-theme.min.css" />
+	<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body data-load-components="{{loadComponents}}">
+
+	<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
+		<nav class="uk-navbar-container uk-navbar" data-uk-navbar>
+
+			<div class="uk-navbar-left">
+				<a href="./" class="uk-navbar-item uk-logo">
+					<img src="{{logo}}" alt="{{nb.siteName}} Logo">
+				</a>
+			</div>
+
+			{{#if menu}}
+			<div class="uk-navbar-right">
+				<div id="nav">
+					{{> renderNavigation}}
+				</div>
+				<a href="#nav" class="uk-navbar-toggle" data-uk-toggle="animation: uk-animation-slide-left;" aria-label="Toggle Navigation" hidden>
+					<span data-uk-navbar-toggle-icon></span>
+				</a>
+			</div>
+			{{/if}}
+
+		</nav>
+	</header>
+
+	<main class="uk-margin-bottom">
+
+		{{#if page.banner}}
+			{{> banner}}
+		{{else}}
+			{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
+				{{#*inline "out"}}
+					<h1>{{page.h1}}</h1>
+					{{> ukBreadcrumb}}
+				{{/inline}}
+			{{/ukContainer}}
+		{{/if}}
+
+		{{#> main}}{{/main}}
+
+	</main>
+
+	<footer class="footer uk-padding-large uk-padding-remove-horizontal">
+		{{#> ukContainer class="uk-text-center"}}
+			{{#*inline "out"}}
+
+			{{#if legal}}
+			<div class="legal uk-margin-small-bottom">
+				<ul>
+				{{#each legal}}
+					<li>
+						<a href="#">{{this}}</a>
+					</li>
+				{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+
+			<div class="copyright uk-margin-small-bottom">Copyright &copy; {{year}} {{nb.clientName}}. All rights reserved.</div>
+
+			<div class="watermark">
+				Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" loading="lazy"></a>
+			</div>
+			{{/inline}}
+		{{/ukContainer}}
+	</footer>
+
+	<script src="./js/svgxuse.min.js"></script>
+	<script src="./js/uikit-core.min.js"></script>
+	<script src="./js/nbkit.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

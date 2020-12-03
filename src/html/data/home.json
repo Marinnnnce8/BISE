@@ -1,0 +1,14 @@
+{
+	"h1": "Fair Game",
+	"banner": {
+		"size": "large",
+		"sizeBottom": "xsmall",
+		"intro": "Shetland Exhibition",
+		"src": "./img/home-1.jpg",
+		"alt": "image",
+		"width": "710",
+		"height": "1059.45",
+		"date": "1877 ",
+		"description": "Hunting auks in Westray, using the same technique seen in all the Atlantic islands."
+	}
+}

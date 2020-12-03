@@ -1,0 +1,54 @@
+{{#> main}}
+{{#*inline "main"}}
+
+{{#> ukSection heading="Internal Pages" size="large"}}
+{{#*inline "out"}}
+
+{{> nbJson id="children" data=items.children}}
+<blockquote>
+  <p>laalalla</p>
+</blockquote>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <p class="uk-text-lead">Text lead</p>
+  <p>Paragraph</p>
+  <p class="uk-text-small">uk-text-small</p>
+  <p class="uk-text-meta">uk-text-meta</p>
+{{/inline}}
+{{/ukSection}}
+
+
+{{#> ukSection heading="Latest News" size="large"}}
+{{#*inline "out"}}
+
+{{> nbJson id="posts" data=items.posts}}
+
+{{/inline}}
+{{/ukSection}}
+
+<div class="bumper">
+  <h2>There should be a horizontal scroll area just below</h2>
+</div>
+
+<section class="container">
+  <div class="space-holder">
+    <div class="sticky">
+      <div class="horizontal">
+        <section role="feed" class="cards">
+          <article class="sample-card"></article>
+          <article class="sample-card"></article>
+          <article class="sample-card"></article>
+          <article class="sample-card"></article>
+          <article class="sample-card"></article>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bumper">
+  <h2>Scroll up to see a horizontal scroll section</h2>
+</div>
+
+{{/inline}}
+{{/main}}

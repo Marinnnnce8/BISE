@@ -1,0 +1,76 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/banner';
+@import 'components/content';
+@import 'components/gallery';
+@import 'components/slideshow';
+@import 'components/responsive';
+// +++ Generated components will be added above this line
+
+@import 'components/nb/cookie';
+@import 'components/nb/form';
+@import 'components/nb/json';
+@import 'components/nb/nav';
+
+@import 'pages/home';
+
+@import 'utils/ie11';
+@import 'utils/print';
+
+.bumper {
+    text-align: center;
+    padding: 128px 16px;
+    min-height: 70vh;
+    background-color: #efefef;
+  }
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.space-holder {
+    position: relative;
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+}
+
+.cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sample-card {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: #111f30;
+    margin-right: 75px;
+    flex-shrink: 0;
+}

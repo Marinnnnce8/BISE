@@ -1,0 +1,55 @@
+.content {
+
+	figure {
+		margin-top: 0;
+		outline: none;
+
+		a {
+			display: inline-block;
+			width: auto;
+		}
+
+		img {
+			display: block;
+			height: auto;
+
+			@media (max-width: $breakpoint-mobile) {
+				width: 100%;
+			}
+		}
+	}
+
+	figcaption {
+		@include image-caption;
+	}
+
+	.align_right {
+		float: right;
+		margin-bottom: $global-medium-gutter;
+		margin-left: $global-medium-gutter;
+	}
+
+	.align_left {
+		float: left;
+		margin-bottom: $global-medium-gutter;
+		margin-right: $global-medium-gutter;
+	}
+
+	.align_center {
+		clear: both;
+		margin: $global-gutter auto;
+		text-align: center;
+	}
+
+	@media (max-width: $breakpoint-mobile) {
+
+		.align_right,
+		.align_left,
+		.align_center {
+			clear: both;
+			float: none;
+			margin: $global-small-gutter 0;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@mixin hook-base-h1 {
+    font-family: $font-serif;
+    color: $global-color;
+}
+
+@mixin hook-base-h2 {
+    font-family: $font-heavy;
+}
+
+@mixin hook-base-h3 {
+    font-family: $font-heavy;
+}
+
+@mixin hook-base-blockquote {
+    font-family: $font-heavy;
+}

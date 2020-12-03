@@ -1,0 +1,65 @@
+//
+// Main
+//
+// ========================================================================
+
+//
+// Typography
+//
+
+// Family
+// Family
+$font-default: 'Montserrat', sans-serif;
+$font-heavy: 'Butler', sans-serif;
+$font-serif: 'NewYork', serif;
+
+// Size
+$font-size: 18px;
+
+// Weight
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+// Line Height
+$line-height: 2;
+
+
+//
+// Colours
+//
+$white: #fff;
+$black: #241d1e;
+$primary: #054565;
+$secondary: $black;
+$success: #daedf2;
+$warning: #f3eae2;
+$danger: #f0506e;
+$grey: lighten($black, 32%);
+$light-grey: lighten($grey, 32%);
+$off-white: #e0e9f4;
+
+
+//
+// Other
+//
+
+// Animation
+$speed: 256ms;
+$speed-fast: $speed / 2;
+$speed-slow: $speed * 2;
+$timing: ease-in-out;
+$transition: $speed $timing;
+
+
+//
+// UIkit Global Variables
+// https://github.com/uikit/uikit/blob/develop/src/scss/components/variables.scss
+//
+// Imports UIkit variable overrides for the theme
+// These may be used by main.scss
+//
+// ========================================================================
+
+@import 'uikit/variables';
