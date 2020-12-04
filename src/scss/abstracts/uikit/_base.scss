@@ -5,6 +5,9 @@
 
 @mixin hook-base-h2 {
     font-family: $font-heavy;
+    letter-spacing: .4em;
+    color: $global-color;
+    margin-bottom: $global-large-gutter;
 }
 
 @mixin hook-base-h3 {
@@ -13,4 +16,9 @@
 
 @mixin hook-base-blockquote {
     font-family: $font-heavy;
+
+    .uk-flex {
+        margin-top: $global-gutter;
+        margin-bottom: $global-gutter;
+    }
 }

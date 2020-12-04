@@ -1,0 +1,40 @@
+@mixin hook-button-default {
+    border: 1px solid $global-color;
+    font-weight: 600;
+    padding: $global-small-margin $button-padding-horizontal;
+    z-index: 10;
+    transition: $transition;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        height: 100%;
+        width: 100%;
+        content: '';
+        background-color: $global-color;
+        transition: $transition;
+        display: block !important;
+        z-index: -1;
+    }
+}
+
+@mixin hook-button-default-hover {
+    border: 1px solid $global-color;
+    color: $off-white;
+
+    &::before {
+        transform: translateY(-100%);
+    }
+}
+
+@mixin hook-button-default-active {
+    border: 1px solid $global-color;
+    color: $off-white;
+
+    &::before {
+        transform: translateY(-100%);
+    }
+}

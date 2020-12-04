@@ -1,12 +1,109 @@
 .footer {
-	font-size: 0.9rem;
+	padding: 170px 0 30px;
+
+	&::before {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		width: 1px;
+		background-color: $global-color;
+		height: 111px;
+		content: '';
+	}
+
+	.uk-text-small {
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 600;
+		letter-spacing: .1em;
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			content: '';
+			height: 1px;
+			background-color: $global-color;
+			bottom: -8px;
+			width: 40px;
+			transition: $transition;
+		}
+
+		@include hover {
+			text-decoration: none;
+
+			&::before {
+				width: calc(100% - 80px);
+			}
+		}
+	}
+
+	.islands {
+		margin-bottom: $global-large-gutter + $global-margin;
+	}
+
+	.contact {
+		margin-bottom: $global-medium-margin + $global-margin;
+	}
+
+	.social {
+
+		a {
+			width: 56px;
+			height: 56px;
+			border: 1px solid $global-color;
+			border-radius: 0;
+			position: relative;
+			overflow: hidden;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				top: 100%;
+				height: 100%;
+				width: 100%;
+				content: '';
+				background-color: $global-color;
+				transition: $transition;
+				z-index: -1;
+			}
+
+			@include hover {
+				&::before {
+					transform: translateY(-100%);
+				}
+			}
+		}
+	}
+
+	.partners {
+		>span {
+			font-size: 16px;
+			margin-bottom: $global-control-small-height;
+			line-height: 1;
+		}
+
+		img {
+			height: 78px;
+			width: auto;
+		}
+	}
+
+	&-bottom {
+		margin: $global-large-margin 2 * $global-control-small-height 0;
+
+		* {
+			font-size: 13px;
+			line-height: 1.5;
+		}
+	}
 
 	@media (max-width: $breakpoint-mobile) {
 		font-size: 0.8rem;
 	}
 
 	.legal {
-		padding: $global-small-margin 0;
 
 		ul {
 			margin: 0;
@@ -17,14 +114,6 @@
 				list-style: none;
 				margin: 0;
 				padding: 0;
-
-				a {
-					color: $grey;
-
-					@include hover {
-						color: $black;
-					}
-				}
 
 				&::after {
 					content: '|';
@@ -45,26 +134,6 @@
 						display: none;
 					}
 				}
-			}
-		}
-	}
-
-	.watermark {
-
-		a {
-			align-items: center;
-			color: $black;
-			display: inline-flex;
-			font-weight: 700;
-
-			@include hover {
-				color: #e11e2f;
-				text-decoration: none;
-			}
-
-			img {
-				height: 1rem;
-				margin-left: 2px;
 			}
 		}
 	}

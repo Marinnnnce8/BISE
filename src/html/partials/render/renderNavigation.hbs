@@ -2,7 +2,7 @@
 {{#each menu}}
 	{{#with this}}
 	<li class="{{#if children}}uk-parent{{/if}}{{#if (eq ../page.name name)}} uk-active{{/if}}">
-		<a href="{{default url "#"}}">{{title}}</a>
+		<a class="uk-text-uppercase" href="{{default url "#"}}">{{title}}</a>
 		{{#if children}}
 		<ul class="uk-nav" id="nav-{{ida title}}">
 		{{#each children}}

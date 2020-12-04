@@ -1,0 +1,13 @@
+.social {
+
+    li {
+        margin-right: $global-margin;
+
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            width: 16px;
+            height: 16px;
+            fill: $global-color;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+{
+	"h1": "Whaling",
+	"banner": {
+		"size": "large",
+		"sizeBottom": "xsmall",
+		"intro": "Shetland Exhibition",
+		"src": "./img/whaling-1.jpg",
+		"alt": "image",
+		"width": "710",
+		"height": "1059.45",
+		"date": "1903 ",
+		"description": "People in the island groups hunted whales whenever the chance came; these were at Weisdale."
+	},
+	"posts": [
+        {
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-1",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Whaling",
+			"hasSummary": true,
+			"intro": "People in the district ran and shouted the exciting news when whales were spotted, just like in this modern hunt in Faroe."
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-4",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Bird Hunting & Egg Collecting",
+			"hasSummary": true,
+            "intro": "Melted blubber produced oil for lamps.",
+            "marginTop": "large"
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-6",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Peat Cutting",
+			"hasSummary": true,
+            "intro": "Whales were divided between the community.  The blubber was flayed off and melted into oil, and the meat was cut-up – seen here at Westvoe, Shetland.  Larger bones were saved for use, although these at Birsay, Orkney, were simply monuments.",
+            "marginTop": "small"
+		},
+        {
+			"url": "#",
+			"label": "View Exibition",
+			"icon": "Whaling",
+			"hasSummary": true,
+            "intro": "There were no special tools, just farm implements.  Whales were stabbed with peat cutters, hayforks, or boathooks.  In the Hebrides, arrows and swords were still used in the 17th century.",
+            "description": "*   [farm tool artefact]"
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-5",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Bird Hunting & Egg Collecting",
+			"hasSummary": true,
+			"intro": "Once the boats were behind the whales, the hunters threw rocks herd them to the beach.  The crowd waiting on land had to keep quiet until the whales were ashore."
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-10",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Peat Cutting",
+			"hasSummary": true,
+			"intro": "A hunt at Inganess, Orkney.  Dead whales were hauled up and secured by ropes if necessary to stop the tide taking them off."
+		},
+        {
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-2",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Whaling",
+			"hasSummary": true,
+			"intro": "Whale meat was boiled.  Before salt was imported, the only preservation was drying.  In the Hebrides, the flesh was packed in kelp ashes, then dried.  The larger bones were used, like jawbones for grain scoops, and ribs for boat skids."
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+			"icon": "Bird Hunting & Egg Collecting",
+			"hasSummary": true,
+            "intro": "Most valuable was the blubber, which was melted into oil for waterproofing boots and to fuel lamps.  Hebrideans took it as a tonic.",
+            "description": "  *  [corked flagon artefact, barrel artefact, spoon & bottle artefact] "
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+            "src": "whaling-card-3",
+            "alt": "image",
+            "width": "",
+            "height": "",
+			"icon": "Peat Cutting",
+			"hasSummary": true,
+			"intro": "Whale hunt at Stornoway in the 1850s."
+		}
+	]
+}

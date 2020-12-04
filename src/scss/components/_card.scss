@@ -1,0 +1,95 @@
+.card {
+    >a {
+        z-index: 2;
+    }
+
+    &-post {
+        &:not(.card-image) {
+            height: 100%;
+
+            .uk-card-media-top {
+                min-height: 678px;
+            }
+        }
+
+        .detail {
+            font-size: .66666rem;
+            line-height: 1.7;
+            font-family: $font-default;
+        }
+    }
+
+    &-image {
+        .uk-card-media-top {
+            background-color: #c4c4c4;
+            position: relative;
+            min-height: 273px;
+
+            &::before {
+                display: block;
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: rgba($black, .22);
+                transition: opacity .6s cubic-bezier(.215, .61, .355, 1);
+                z-index: 1;
+                opacity: 1;
+            }
+
+            img {
+                transform: scale3d(1.05, 1.05, 1);
+                transition: transform .6s cubic-bezier(.215, .61, .355, 1);
+            }
+
+            .uk-flex {
+                width: 100%;
+            }
+        }
+
+        .uk-card-body {
+            padding-right: 0;
+
+            .uk-text-small {
+                max-width: 325px;
+                width: 100%;
+            }
+        }
+
+        @include hover {
+            .uk-card-media-top::before {
+                opacity: 0;
+            }
+
+            img {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .uk-icon-button {
+        width: 44px;
+        height: 44px;
+        right: 20px;
+        bottom: 20px;
+        background-color: rgba($black, .2);
+
+        svg {
+            fill: rgba($white, .5);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        &-margin-small-top {
+            margin-top: 60px;
+        }
+
+        &-margin-large-top {
+            margin-top: 145px;
+        }
+    }
+}

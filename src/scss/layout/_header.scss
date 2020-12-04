@@ -1,9 +1,26 @@
 .header {
+	padding: 7px $global-large-gutter;
+
+	.uk-navbar-container {
+		padding: 0 175px;
+		min-height: 100px;
+	}
+
+	.nb-nav-desktop {
+		padding-top: 55px;
+	}
+
+	.uk-button {
+		top: 35px;
+		right: 60px;
+		transform: translateY(0);
+		position: absolute;
+	}
 
 	.uk-logo {
 
 		img {
-			width: 228px;
+			width: 176px;
 		}
 	}
 }

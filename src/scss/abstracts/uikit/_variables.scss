@@ -44,6 +44,9 @@ $global-secondary-background: $secondary;
 $global-success-background: $success;
 $global-warning-background: $warning;
 $global-danger-background: $danger;
+$background-default-background: $off-white;
+$background-primary-background: $success;
+$background-secondary-background: $warning;
 
 // Borders
 $global-border-width: 1px;
@@ -54,11 +57,11 @@ $global-margin: 20px;
 $global-small-margin: 10px;
 $global-medium-margin: 40px;
 $global-large-margin: 70px;
-$global-xlarge-margin: 135px;
+$global-xlarge-margin: 140px;
 $global-gutter: 30px;
 $global-small-gutter: 15px;
 $global-medium-gutter: 40px;
-$global-large-gutter: 70px;
+$global-large-gutter: 60px;
 
 // Controls
 $global-control-height: 40px;
@@ -78,6 +81,7 @@ $base-h3-font-size: 67px;
 $base-h3-line-height: 1 !default;
 $base-blockquote-font-size: $global-medium-font-size !default;
 $base-blockquote-font-style: normal !default;
+$base-blockquote-margin-vertical: $global-gutter;
 $base-code-color: inherit;
 $base-em-color: inherit;
 $base-selection-background: $secondary;
@@ -161,8 +165,46 @@ $animation-fast-duration: $speed-fast;
 //
 $text-lead-font-size: $global-large-font-size;
 $text-lead-line-height: 1.6;
-$text-lead-color: $global-emphasis-color;
+$text-lead-color: $global-color;
 $text-meta-color: $global-color;
 $text-small-line-height: 1.7;
 $text-meta-font-size: 18px;
 $text-meta-line-height: 1.7;
+$text-large-font-size: $global-xlarge-font-size;
+$text-large-line-height: 1;
+
+
+//
+// Icon
+//
+$icon-button-background: transparent;
+
+
+//
+// Card
+//
+$card-body-padding-horizontal-l: 0 $global-large-gutter;
+$card-body-padding-vertical-l: $global-gutter $global-medium-margin;
+
+
+//
+// Navbar
+//
+$navbar-nav-item-height: 0;
+$navbar-nav-item-font-size: 12px;
+$navbar-nav-item-color: $global-color;
+$navbar-nav-item-active-color: $global-color;
+$navbar-nav-item-hover-color: $global-color;
+$navbar-nav-item-onclick-color: $global-color;
+$navbar-nav-item-padding-horizontal: $global-margin + 5;
+
+
+//
+// Button
+//
+$button-font-size: 12px;
+$button-line-height: 1.5;
+$button-padding-horizontal: $global-medium-margin;
+$button-default-color: $global-color;
+$button-default-hover-color: $global-color;
+$button-default-active-color: $global-color;

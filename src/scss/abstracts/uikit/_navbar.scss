@@ -1,0 +1,32 @@
+@mixin hook-navbar-nav-item {
+    font-weight: 600;
+    line-height: 1.5;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 50%;
+        height: 1px;
+        background-color: $global-color;
+        transform: translate(-50%);
+        width: calc(100% - 50px);
+        content: '';
+        bottom: -10px;
+        opacity: 0;
+        transition: $transition;
+    }
+}
+
+@mixin hook-navbar-nav-item-hover {
+
+    &::before {
+        opacity: 1;
+    }
+}
+
+@mixin hook-navbar-nav-item-active {
+
+    &::before {
+        opacity: 1;
+    }
+}

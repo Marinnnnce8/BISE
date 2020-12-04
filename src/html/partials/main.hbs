@@ -21,52 +21,79 @@
 </head>
 <body data-load-components="{{loadComponents}}">
 
-	<header class="header" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
-		<nav class="uk-navbar-container uk-navbar" data-uk-navbar>
+	<header class="header uk-position-relative" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
+		<nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-flex-center uk-position-relative" data-uk-navbar>
 
-			<div class="uk-navbar-left">
-				<a href="./" class="uk-navbar-item uk-logo">
-					<img src="{{logo}}" alt="{{nb.siteName}} Logo">
-				</a>
-			</div>
+			<a href="./" class="uk-navbar-item uk-logo uk-padding-remove-horizontal uk-position-center-left">
+				<img src="{{logo}}" alt="{{nb.siteName}} Logo">
+			</a>
 
 			{{#if menu}}
-			<div class="uk-navbar-right">
 				<div id="nav">
 					{{> renderNavigation}}
 				</div>
 				<a href="#nav" class="uk-navbar-toggle" data-uk-toggle="animation: uk-animation-slide-left;" aria-label="Toggle Navigation" hidden>
 					<span data-uk-navbar-toggle-icon></span>
 				</a>
-			</div>
 			{{/if}}
 
 		</nav>
+		<a href="#" class="uk-button uk-button-default uk-flex">Contact</a>
 	</header>
 
 	<main class="uk-margin-bottom">
+		{{> banner}}
 
-		{{#if page.banner}}
-			{{> banner}}
-		{{else}}
-			{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
-				{{#*inline "out"}}
-					<h1>{{page.h1}}</h1>
-					{{> ukBreadcrumb}}
-				{{/inline}}
-			{{/ukContainer}}
-		{{/if}}
+		{{> renderSocial type="fixed"}}
+
+		<a href="#" class="uk-text-uppercase uk-text-small uk-position-fixed uk-position-center-left uk-text-bold nb-share">Share exhibition</a>
 
 		{{#> main}}{{/main}}
 
 	</main>
 
-	<footer class="footer uk-padding-large uk-padding-remove-horizontal">
+	<footer class="footer uk-position-relative">
 		{{#> ukContainer class="uk-text-center"}}
+
 			{{#*inline "out"}}
 
+			<h2 class="uk-text-uppercase">Visit The Other Islands</h2>
+
+			<div class="islands">
+				<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+				{{#each islands}}
+					{{#with this}}
+					<a href="{{url}}" target="_blank" rel="noopener" class="uk-text-uppercase uk-text-small uk-position-relative uk-padding uk-padding-remove-vertical">{{name}}</a>
+					{{/with}}
+				{{/each}}
+				</div>
+			</div>
+
+			<div class="uk-flex uk-flex-middle uk-flex-center contact">
+				<div>
+					<a href="#" class="uk-button uk-button-large uk-button-default uk-flex uk-margin-medium-right">Contact Us</a>
+				</div>
+				{{> renderSocial}}
+			</div>
+
+			<div class="partners">
+				<span class="uk-text-center uk-display-block">Funders & Partners</span>
+				<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+				{{#each partners}}
+					{{#with this}}
+					<a href="{{url}}" target="_blank" rel="noopener"><img src="./img/{{image}}" alt="{{name}}" loading="lazy"></a>
+					{{/with}}
+				{{/each}}
+				</div>
+			</div>
+
+			{{/inline}}
+		{{/ukContainer}}
+		<div class="footer-bottom uk-flex uk-flex-between uk-flex-middle">
+			<div class="copyright">&copy; {{nb.clientName}}</div>
+			
 			{{#if legal}}
-			<div class="legal uk-margin-small-bottom">
+			<div class="legal">
 				<ul>
 				{{#each legal}}
 					<li>
@@ -77,13 +104,10 @@
 			</div>
 			{{/if}}
 
-			<div class="copyright uk-margin-small-bottom">Copyright &copy; {{year}} {{nb.clientName}}. All rights reserved.</div>
-
 			<div class="watermark">
-				Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB <img src="https://brand.nbcommunication.com/logo/web/nb.png" alt="NB Communication Ltd Logo" loading="lazy"></a>
+				Website by <a title="NB Communication - Digital Marketing Agency" target="_blank" rel="noopener" href="https://www.nbcommunication.com/">NB</a>
 			</div>
-			{{/inline}}
-		{{/ukContainer}}
+		</div>
 	</footer>
 
 	<script src="./js/svgxuse.min.js"></script>

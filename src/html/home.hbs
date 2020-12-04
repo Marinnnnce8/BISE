@@ -1,29 +1,38 @@
 {{#> main}}
 {{#*inline "main"}}
 
-{{#> ukSection heading="Internal Pages" size="large"}}
-{{#*inline "out"}}
-
-{{> nbJson id="children" data=items.children}}
-<blockquote>
-  <p>laalalla</p>
-</blockquote>
-  <h2>h2</h2>
-  <h3>h3</h3>
-  <p class="uk-text-lead">Text lead</p>
-  <p>Paragraph</p>
-  <p class="uk-text-small">uk-text-small</p>
-  <p class="uk-text-meta">uk-text-meta</p>
-{{/inline}}
+{{#> ukSection size="xsmall"}}
+	{{#*inline "out"}}
+		<p class="uk-text-lead">Visitors to the Western and Northern isles notice the differences: the Hebrides’ vibrant Celtic culture, Orkney’s productive farming, Shetland’s lavish infrastructure. Britain’s Atlantic islands used to share much more in common, with similar folk practices that continued for centuries.</p>
+		<p>This exhibition examines three customs that some folk today might think weren’t “politically correct” – hunting seabirds and eggs, killing whales, harvesting peat.  How did islanders use these resources?  Why did they abandon traditions, and what’s to stop their return?</p>
+	{{/inline}}
 {{/ukSection}}
 
 
-{{#> ukSection heading="Latest News" size="large"}}
-{{#*inline "out"}}
+{{#> ukSection size="large"}}
+	{{#*inline "out"}}
+		{{#> ukContainer size="large"}}
 
-{{> nbJson id="posts" data=items.posts}}
+			{{#*inline "out"}}
 
-{{/inline}}
+			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom"}}
+				{{#*inline "cells"}}
+
+				{{#each page.posts}}
+					{{#with this}}
+						<div>
+							{{> card type="post"}}
+						</div>
+					{{/with}}
+				{{/each}}
+
+				{{/inline}}
+			{{/ukGrid}}
+
+			{{/inline}}
+		{{/ukContainer}}
+
+	{{/inline}}
 {{/ukSection}}
 
 <div class="bumper">

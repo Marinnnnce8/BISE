@@ -1,0 +1,11 @@
+@mixin hook-card {
+    .uk-text-small {
+        font-size: .88888rem;
+        line-height: 1.5;
+        letter-spacing: -.02em;
+    }
+}
+
+@mixin hook-card-media-top {
+    padding: $global-medium-gutter $global-large-gutter;
+}

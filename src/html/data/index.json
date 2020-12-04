@@ -1,26 +1,29 @@
 {
 	"nb": {
 		"siteName": "Template Site",
-		"clientName": "NB Communication Ltd"
+		"clientName": "Between Islands"
 	},
 	"ukContainer": "xsmall",
 	"cta": "Find out more",
 	"menu": [{
-			"name": "home",
-			"title": "Home",
-			"url": "home.html"
+			"name": "whaling",
+			"title": "Whaling",
+			"url": "whaling.html"
 		},
 		{
-			"name": "about",
-			"title": "About",
-			"children": [{
-				"name": "child",
-				"title": "Child"
-			}]
+			"name": "bird-hunting-and-egg-collecting",
+			"title": "Bird Hunting & Egg Collecting",
+			"url": "bird-hunting-and-egg-collecting.html"
 		},
 		{
-			"name": "contact",
-			"title": "Contact"
+			"name": "peat-cutting",
+			"title": "Peat Cutting",
+			"url": "peat-cutting.html"
+		},
+		{
+			"name": "about-between-islands",
+			"title": "About Between Islands",
+			"url": "about-between-islands.html"
 		}
 	],
 	"social": [{
@@ -30,11 +33,15 @@
 		{
 			"name": "twitter",
 			"url": "https://twitter.com/"
+		},
+		{
+			"name": "instagram",
+			"url": "https://instagram.com/"
 		}
 	],
 	"legal": [
-		"Terms & Conditions",
-		"Privacy Policy",
+		"Terms of use",
+		"Privacy notice",
 		"Disclaimer"
 	],
 	"items": {
@@ -86,44 +93,6 @@
 				}
 			]
 		},
-		"gallery": [
-			[{
-					"href": "https://aws.nbcommunication.com/template/img/placeholder-columns.jpg",
-					"src": "https://aws.nbcommunication.com/template/img/placeholder-columns.0x768.jpg",
-					"width": "448",
-					"height": "299",
-					"alt": "This gallery image has a caption.",
-					"caption": "This gallery image has a caption."
-				},
-				{
-					"href": "https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.jpg",
-					"src": "https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.0x768.jpg",
-					"width": "448",
-					"height": "299"
-				}
-			],
-			[{
-					"href": "https://aws.nbcommunication.com/template/img/placeholder-sprinkler.jpg",
-					"src": "https://aws.nbcommunication.com/template/img/placeholder-sprinkler.0x768.jpg",
-					"width": "334",
-					"height": "223"
-				},
-				{
-					"href": "https://aws.nbcommunication.com/template/img/placeholder-town.jpg",
-					"src": "https://aws.nbcommunication.com/template/img/placeholder-town.0x768.jpg",
-					"width": "335",
-					"height": "224",
-					"alt": "This gallery image also has a caption with HTML.",
-					"caption": "This <em>gallery</em> image also has a <strong>caption</strong> with HTML."
-				},
-				{
-					"href": "https://aws.nbcommunication.com/template/img/placeholder-waterfall.jpg",
-					"src": "https://aws.nbcommunication.com/template/img/placeholder-waterfall.0x768.jpg",
-					"width": "223",
-					"height": "223"
-				}
-			]
-		],
 		"slideshow": [{
 				"href": "https://aws.nbcommunication.com/template/img/placeholder-beach.jpg",
 				"src": "https://aws.nbcommunication.com/template/img/placeholder-beach.1200x675.jpg",
@@ -153,5 +122,49 @@
 				"height": "675"
 			}
 		]
-	}
+	},
+	"islands": [{
+			"name": "Between islands",
+			"url": "#"
+		},
+		{
+			"name": "Orkney islands",
+			"url": "#"
+		},
+		{
+			"name": "Western Isles",
+			"url": "#"
+		}
+	],
+	"partners": [{
+			"name": "Between Islands",
+			"url": "#",
+			"image": "preview-gallery-partner-BI-logo.png"
+		},
+		{
+			"name": "An Lanntair",
+			"url": "#",
+			"image": "preview-gallery-partner-AL-logo.png"
+		},
+		{
+			"name": "The European Agricultural Fund for Rural Development",
+			"url": "#",
+			"image": "preview-gallery-partner-TEAFFRD-logo.png"
+		},
+		{
+			"name": "The Scottish Government",
+			"url": "#",
+			"image": "preview-gallery-partner-TSG-logo.png"
+		},
+		{
+			"name": "Scottish Rural Development Programme",
+			"url": "#",
+			"image": "preview-gallery-partner-SRDP-logo.png"
+		},
+		{
+			"name": "Leader",
+			"url": "#",
+			"image": "preview-gallery-partner-LD-logo.png"
+		}
+	]
 }

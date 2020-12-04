@@ -10,5 +10,45 @@
 		"height": "1059.45",
 		"date": "1877 ",
 		"description": "Hunting auks in Westray, using the same technique seen in all the Atlantic islands."
-	}
+	},
+	"posts": [{
+			"url": "#",
+			"label": "View Exibition",
+			"bg": "card-1",
+			"title": "Whaling",
+			"hasSummary": true,
+			"intro": "People in the island groups hunted whales whenever the chance came; these were at Weisdale.",
+			"cite": "“Last year there came in great store of young whales in to one of their lochs which the inhabitants enclosed with boats, and killed more than one hundred of them”.",
+			"quotee": "John Dymes,",
+			"quoteDetail": "Hebrides, 1630",
+			"bgColor": "default",
+			"link": true
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+			"bg": "card-2",
+			"title": "Bird Hunting & Egg Collecting",
+			"hasSummary": true,
+			"intro": "Hunting auks in Westray, using the same technique seen in all the Atlantic islands.",
+			"cite": "“The common people are dexterous in climbing the rocks in quest of eggs and fowl; but this exercise is attended with great danger, and sometimes proves fatal”.",
+			"quotee": "Martin Martin,",
+			"quoteDetail": "Shetland, c.1695",
+			"bgColor": "primary",
+			"link": true
+		},
+		{
+			"url": "#",
+			"label": "View Exibition",
+			"bg": "card-3",
+			"title": "Peat Cutting",
+			"hasSummary": true,
+			"intro": "The only one of the three island traditions still thriving is peat-cutting, as in here at South Uist.",
+			"cite": "“Peats are the ordinary fuel they use, which they have very good and in great plenty, except in some places, as in Sanday; they are obliged to bring peats from adjacent isles”.",
+			"quotee": "John Dymes,",
+			"quoteDetail": "Orkney, 1700",
+			"bgColor": "secondary",
+			"link": true
+		}
+	]
 }

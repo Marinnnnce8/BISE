@@ -3,9 +3,8 @@
 		{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
 			{{#*inline "out"}}
 			<div class="uk-text-center uk-position-relative uk-position-z-index">
-				{{#if (eq page.name "home")}}<span>{{page.banner.intro}}</span>{{/if}}
+				{{#if (eq page.name "home")}}<span class="uk-text-uppercase uk-text-large">{{page.banner.intro}}</span>{{/if}}
 				<h1>{{page.h1}}</h1>
-				{{#if (neq page.name "home")}}{{> ukBreadcrumb}}{{/if}}
 			</div>
 			{{/inline}}
 		{{/ukContainer}}
