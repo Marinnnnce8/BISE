@@ -4,7 +4,7 @@
     }
 
     &-post {
-        &:not(.card-image) {
+        &:not(.card-image):not(.card-quote) {
             height: 100%;
 
             .uk-card-media-top {
@@ -67,6 +67,14 @@
                 transform: scaleX(1);
             }
         }
+    }
+
+    &-horizontal {
+        position: relative;
+        // height: 300px;
+        width: 710px;
+        margin-right: 60px;
+        flex-shrink: 0;
     }
 
     .uk-icon-button {

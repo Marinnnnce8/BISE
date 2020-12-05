@@ -9,6 +9,12 @@ var main = {
 
 	init: function() {
 
+		var horizontalContainer = document.getElementsByClassName('horizontal-container')[0];
+
+		if(horizontalContainer) {
+			this.addMultiListener(window, 'load resize', main.horizontalScroll);
+		}
+
 		nb.profilerStart('main.init');
 
 		// Content
@@ -146,9 +152,17 @@ var main = {
 		return out;
 	},
 
+	//combining multiple event listeners
+	addMultiListener: function(element, eventNames, listener) {
+		var events = eventNames.split(' ');
+		for (var i=0, iLen=events.length; i<iLen; i++) {
+			element.addEventListener(events[i], listener, false);
+		}
+	},
+
 	horizontalScroll: function() {
-		var spaceHolder = document.querySelector('.space-holder');
-		var horizontal = document.querySelector('.horizontal');
+		var spaceHolder = document.querySelector('.horizontal-holder');
+		var horizontal = document.querySelector('.horizontal-inner');
 		spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
 
 		function calcDynamicHeight(ref) {
@@ -158,18 +172,26 @@ var main = {
 			return objectWidth - vw + vh + 150;
 		}
 
-		window.addEventListener('scroll', () => {
-			var sticky = document.querySelector('.sticky');
-			horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+		window.addEventListener('scroll', function () {
+			var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+
+			if (isDesktop) {
+				var sticky = document.querySelector('.horizontal-sticky');
+				horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+			}
 		});
 
-		window.addEventListener('resize', () => {
-			spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+		window.addEventListener('resize', function () {
+			var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+			
+			if (isDesktop) {
+				spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+			}
 		});
-	}
+	},
+
 };
 
 uk.ready(function() {
 	main.init();
-	main.horizontalScroll();
 });

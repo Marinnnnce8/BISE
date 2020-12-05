@@ -1,111 +1,184 @@
 {
-	"h1": "Whaling",
-	"banner": {
-		"size": "large",
-		"sizeBottom": "xsmall",
-		"intro": "Shetland Exhibition",
-		"src": "./img/whaling-1.jpg",
-		"alt": "image",
-		"width": "710",
-		"height": "1059.45",
-		"date": "1903 ",
-		"description": "People in the island groups hunted whales whenever the chance came; these were at Weisdale."
-	},
-	"posts": [
-        {
-			"url": "#",
-			"label": "View Exibition",
+    "h1": "Whaling",
+    "banner": {
+        "size": "large",
+        "sizeBottom": "xsmall",
+        "intro": "Shetland Exhibition",
+        "src": "./img/whaling-1.jpg",
+        "alt": "image",
+        "width": "710",
+        "height": "1059.45",
+        "date": "1903 ",
+        "description": "People in the island groups hunted whales whenever the chance came; these were at Weisdale."
+    },
+    "posts": [{
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-1",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Whaling",
-			"hasSummary": true,
-			"intro": "People in the district ran and shouted the exciting news when whales were spotted, just like in this modern hunt in Faroe."
-		},
-		{
-			"url": "#",
-			"label": "View Exibition",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "People in the district ran and shouted the exciting news when whales were spotted, just like in this modern hunt in Faroe."
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-4",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Bird Hunting & Egg Collecting",
-			"hasSummary": true,
+            "icon": true,
+            "hasSummary": true,
             "intro": "Melted blubber produced oil for lamps.",
             "marginTop": "large"
-		},
-		{
-			"url": "#",
-			"label": "View Exibition",
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-6",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Peat Cutting",
-			"hasSummary": true,
+            "icon": true,
+            "hasSummary": true,
             "intro": "Whales were divided between the community.  The blubber was flayed off and melted into oil, and the meat was cut-up – seen here at Westvoe, Shetland.  Larger bones were saved for use, although these at Birsay, Orkney, were simply monuments.",
             "marginTop": "small"
-		},
+        },
         {
-			"url": "#",
-			"label": "View Exibition",
-			"icon": "Whaling",
-			"hasSummary": true,
+            "url": "#",
+            "label": "View Exibition",
+            "icon": true,
+            "hasSummary": true,
             "intro": "There were no special tools, just farm implements.  Whales were stabbed with peat cutters, hayforks, or boathooks.  In the Hebrides, arrows and swords were still used in the 17th century.",
             "description": "*   [farm tool artefact]"
-		},
-		{
-			"url": "#",
-			"label": "View Exibition",
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-5",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Bird Hunting & Egg Collecting",
-			"hasSummary": true,
-			"intro": "Once the boats were behind the whales, the hunters threw rocks herd them to the beach.  The crowd waiting on land had to keep quiet until the whales were ashore."
-		},
-		{
-			"url": "#",
-			"label": "View Exibition",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Once the boats were behind the whales, the hunters threw rocks herd them to the beach.  The crowd waiting on land had to keep quiet until the whales were ashore."
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-10",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Peat Cutting",
-			"hasSummary": true,
-			"intro": "A hunt at Inganess, Orkney.  Dead whales were hauled up and secured by ropes if necessary to stop the tide taking them off."
-		},
+            "icon": true,
+            "hasSummary": true,
+            "intro": "A hunt at Inganess, Orkney.  Dead whales were hauled up and secured by ropes if necessary to stop the tide taking them off."
+        },
         {
-			"url": "#",
-			"label": "View Exibition",
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-2",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Whaling",
-			"hasSummary": true,
-			"intro": "Whale meat was boiled.  Before salt was imported, the only preservation was drying.  In the Hebrides, the flesh was packed in kelp ashes, then dried.  The larger bones were used, like jawbones for grain scoops, and ribs for boat skids."
-		},
-		{
-			"url": "#",
-			"label": "View Exibition",
-			"icon": "Bird Hunting & Egg Collecting",
-			"hasSummary": true,
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Whale meat was boiled.  Before salt was imported, the only preservation was drying.  In the Hebrides, the flesh was packed in kelp ashes, then dried.  The larger bones were used, like jawbones for grain scoops, and ribs for boat skids."
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
+            "icon": true,
+            "hasSummary": true,
             "intro": "Most valuable was the blubber, which was melted into oil for waterproofing boots and to fuel lamps.  Hebrideans took it as a tonic.",
             "description": "  *  [corked flagon artefact, barrel artefact, spoon & bottle artefact] "
-		},
-		{
-			"url": "#",
-			"label": "View Exibition",
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
             "src": "whaling-card-3",
             "alt": "image",
             "width": "",
             "height": "",
-			"icon": "Peat Cutting",
-			"hasSummary": true,
-			"intro": "Whale hunt at Stornoway in the 1850s."
-		}
-	]
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Whale hunt at Stornoway in the 1850s."
+        }
+    ],
+    "quotes": [{
+            "hasSummary": true,
+            "quotation": true,
+            "cite": "“A boat arrived with intelligence that whales had entered Yellsound.  Females and boys issued from cottages, making the hills reverberate with joyful exclamations. Men launched boats and stored them with stones.  Whales were seen for a quarter of an hour, rising to blow.  The object was to drive them on the shore of Hamnavoe. The boats ranged in semi-circular form, a reserve keeping at distance.”",
+            "quotee": "Samuel Hibbert,",
+            "quoteDetail": "Yell, 1818"
+        },
+        {
+            "hasSummary": true,
+            "quotation": true,
+            "cite": "“They tumbled into the boats on shore, throwing in heaps of stones to be used as shot for the enemy.  In a few minutes thirty boats were steering close to the land, rowing as for dear life.  Soon a barrier of boats formed across the bay; another line of boats, arriving later, formed a second barrier one hundred yards nearer the ocean.”",
+            "quotee": "John Mackenzie,",
+            "quoteDetail": "Lewis, c.1820"
+        },
+        {
+            "hasSummary": true,
+            "quotation": true,
+            "cite": "“The monsters dashed forwards a few yards, pursued by boats, and were soon floundering in the shallows.  Fast and furious the boatmen struck and stabbed to right and left.  The blood of the dead and dying gave a dreadful aspect of butchery to the close of the summer whale-chase.”",
+            "quotee": "Daniel Gorrie,",
+            "quoteDetail": "Stronsay, 1868"
+        }
+    ],
+    "postsSecond": [{
+            "url": "#",
+            "label": "View Exibition",
+            "src": "whaling-card-8",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
+            "src": "whaling-card-9",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "marginTop": "large"
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
+            "src": "whaling-card-10",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "marginTop": "small"
+        }
+    ],
+    "postsStories": [
+        {
+            "url": "#",
+            "label": "View Exibition",
+            "bg": "card-2",
+            "title": "Bird Hunting & Egg Collecting",
+            "link": true
+        },
+        {
+            "url": "#",
+            "label": "View Exibition",
+            "bg": "card-3",
+            "title": "Peat Cutting",
+            "link": true
+        }
+    ]
 }

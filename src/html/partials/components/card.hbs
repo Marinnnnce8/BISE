@@ -1,22 +1,27 @@
 {{#if (eq type "post")}}
-    <div class="uk-card card {{#if (eq type "post")}}card-post {{#if bgColor}}uk-background-{{bgColor}}{{/if}}{{/if}}{{#if icon}} card-image{{/if}} {{#if marginTop}} card-margin-{{marginTop}}-top{{/if}}">
-        <a href="{{url}}" class="uk-position-cover" aria-label="{{label}}"></a>
-        <div class="uk-card-media-top{{#if cite}} uk-light{{/if}}{{#if bg}} uk-background-cover{{/if}}{{#if (eq type "post")}} uk-flex uk-flex-column uk-flex-right{{/if}}{{#if icon}} uk-overflow-hidden uk-position-relative uk-padding-remove{{/if}}" {{#if bg}} data-src="./img/{{bg}}.jpg" data-uk-img{{/if}}>
-            {{#if title}}<h3>{{title}}</h3>{{/if}}
-            {{#if src}}
-                <img src="./img/{{src}}.jpg" alt="{{alt}}" loading="lazy" width="{{width}}" height="{{height}}">
-            {{/if}}
-            {{#if description}}
-                <div class="uk-position-center uk-flex uk-flex-center uk-flex-middle">
-                    <p class="uk-text-small uk-width-3-5 uk-text-center">{{description}}</p>
-                </div>
-            {{/if}}
-            {{#if icon}}
-                <span class="uk-icon-button uk-position-bottom-right" role="presentation">
-                    {{> renderIcon name="plus"}}
-                </span>
-            {{/if}}
-        </div>
+    <div class="uk-card card {{#if (eq type "post")}}card-post {{#if bgColor}}uk-background-{{bgColor}}{{/if}}{{/if}}{{#if icon}}card-image{{/if}}{{#if quotation}}card-quote card-horizontal{{/if}}{{#if marginTop}} card-margin-{{marginTop}}-top{{/if}}">
+        {{#if url}}
+            <a href="{{url}}" class="uk-position-cover" aria-label="{{label}}"></a>
+        {{/if}}
+        {{#if quotation}}
+        {{else}}
+            <div class="uk-card-media-top{{#if title}} uk-light{{/if}}{{#if bg}} uk-background-cover{{/if}}{{#if (eq type "post")}} uk-flex uk-flex-column uk-flex-right{{/if}}{{#if icon}} uk-overflow-hidden uk-position-relative uk-padding-remove{{/if}}" {{#if bg}} data-src="./img/{{bg}}.jpg" data-uk-img{{/if}}>
+                {{#if title}}<h3>{{title}}</h3>{{/if}}
+                {{#if src}}
+                    <img src="./img/{{src}}.jpg" alt="{{alt}}" loading="lazy" width="{{width}}" height="{{height}}">
+                {{/if}}
+                {{#if description}}
+                    <div class="uk-position-center uk-flex uk-flex-center uk-flex-middle">
+                        <p class="uk-text-small uk-width-3-5 uk-text-center">{{description}}</p>
+                    </div>
+                {{/if}}
+                {{#if icon}}
+                    <span class="uk-icon-button uk-position-bottom-right" role="presentation">
+                        {{> renderIcon name="plus"}}
+                    </span>
+                {{/if}}
+            </div>
+        {{/if}}
         {{#if hasSummary}}
             <div class="uk-card-body">
                 <div class="uk-flex uk-flex-right">
