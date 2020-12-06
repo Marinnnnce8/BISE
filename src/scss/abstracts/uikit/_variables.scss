@@ -184,7 +184,7 @@ $icon-button-background: transparent;
 // Card
 //
 $card-body-padding-horizontal-l: 0 $global-large-gutter;
-$card-body-padding-vertical-l: $global-gutter $global-medium-margin;
+$card-body-padding-vertical-l: $global-gutter $global-large-gutter;
 
 
 //
@@ -208,3 +208,7 @@ $button-padding-horizontal: $global-medium-margin;
 $button-default-color: $global-color;
 $button-default-hover-color: $global-color;
 $button-default-active-color: $global-color;
+$button-primary-background: transparent;
+$button-primary-color: $global-color;
+$button-primary-hover-color: $global-color;
+$button-primary-active-color: $global-color;

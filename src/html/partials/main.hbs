@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="./css/uikit-theme.min.css" />
 	<link rel="stylesheet" href="./css/main.min.css" />
 </head>
-<body data-load-components="{{loadComponents}}">
+<body data-load-components="{{loadComponents}}" class="page-{{#if page.bgColor}}{{page.bgColor}}{{else}}default{{/if}}">
 
 	<header class="header uk-position-relative" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
 		<nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-flex-center uk-position-relative" data-uk-navbar>
@@ -46,7 +46,7 @@
 
 		{{> renderSocial type="fixed"}}
 
-		<a href="#" class="uk-text-uppercase uk-text-small uk-position-fixed uk-position-center-left uk-text-bold nb-share">Share exhibition</a>
+		<a href="#" class="uk-text-uppercase uk-text-small uk-position-fixed uk-position-center-left uk-position-z-index uk-text-bold nb-share">Share exhibition</a>
 
 		{{#> main}}{{/main}}
 

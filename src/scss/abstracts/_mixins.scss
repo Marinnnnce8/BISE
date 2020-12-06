@@ -49,6 +49,27 @@
     }
 }
 
+// Page Colours
+@mixin page-colours($peat: $warning,
+	$whaling: $off-white,
+	$birds: $success,
+	$default: $secondary,
+	$property: background-color) {
+	#{$property}: $default;
+
+	&.page-peat {
+		#{$property}: $peat;
+	}
+
+	&.page-whaling {
+		#{$property}: $whaling;
+	}
+
+	&.page-birds {
+		#{$property}: $birds;
+	}
+}
+
 
 //
 // UIkit

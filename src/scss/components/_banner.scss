@@ -8,6 +8,7 @@
 			top: 50%;
 			font-size: .78rem;
 			line-height: 1.5;
+			letter-spacing: -.02em;
 
 			&::before {
 				position: absolute;
@@ -41,7 +42,7 @@
 
 				&::before {
 					left: $global-small-margin;
-					top: $global-small-margin + 3px;
+					top: $global-small-margin;
 				}
 			}
 		}

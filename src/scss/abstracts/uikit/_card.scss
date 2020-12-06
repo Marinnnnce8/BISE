@@ -7,5 +7,9 @@
 }
 
 @mixin hook-card-media-top {
-    padding: $global-medium-gutter $global-large-gutter;
+    padding: 0;
+
+    h3 {
+        padding: $global-medium-gutter $global-large-gutter;
+    }
 }

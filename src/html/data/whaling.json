@@ -1,4 +1,5 @@
 {
+    "bgColor": "whaling",
     "h1": "Whaling",
     "banner": {
         "size": "large",
@@ -13,7 +14,6 @@
     },
     "posts": [{
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-1",
             "alt": "image",
             "width": "",
@@ -24,7 +24,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-4",
             "alt": "image",
             "width": "",
@@ -36,7 +35,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-6",
             "alt": "image",
             "width": "",
@@ -48,7 +46,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "icon": true,
             "hasSummary": true,
             "intro": "There were no special tools, just farm implements.  Whales were stabbed with peat cutters, hayforks, or boathooks.  In the Hebrides, arrows and swords were still used in the 17th century.",
@@ -56,7 +53,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-5",
             "alt": "image",
             "width": "",
@@ -67,7 +63,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-10",
             "alt": "image",
             "width": "",
@@ -78,7 +73,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-2",
             "alt": "image",
             "width": "",
@@ -89,7 +83,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "icon": true,
             "hasSummary": true,
             "intro": "Most valuable was the blubber, which was melted into oil for waterproofing boots and to fuel lamps.  Hebrideans took it as a tonic.",
@@ -97,7 +90,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-3",
             "alt": "image",
             "width": "",
@@ -131,7 +123,6 @@
     ],
     "postsSecond": [{
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-8",
             "alt": "image",
             "width": "",
@@ -142,7 +133,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-9",
             "alt": "image",
             "width": "",
@@ -154,7 +144,6 @@
         },
         {
             "url": "#",
-            "label": "View Exibition",
             "src": "whaling-card-10",
             "alt": "image",
             "width": "",
@@ -165,18 +154,21 @@
             "marginTop": "small"
         }
     ],
-    "postsStories": [
-        {
+    "postsStories": [{
             "url": "#",
-            "label": "View Exibition",
-            "bg": "card-2",
+            "src": "card-2",
+            "alt": "image",
+			"width": "452",
+			"height": "768",
             "title": "Bird Hunting & Egg Collecting",
             "link": true
         },
         {
             "url": "#",
-            "label": "View Exibition",
-            "bg": "card-3",
+            "src": "card-3",
+            "alt": "image",
+			"width": "450",
+			"height": "768",
             "title": "Peat Cutting",
             "link": true
         }
