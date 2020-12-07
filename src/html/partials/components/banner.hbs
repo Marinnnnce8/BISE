@@ -1,21 +1,19 @@
 <div class="banner uk-position-relative">
-	<div class="uk-overlay">
-		{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
-			{{#*inline "out"}}
-			<div class="uk-text-center uk-position-relative uk-position-z-index">
-				{{#if (eq page.name "home")}}<span class="uk-text-uppercase uk-text-large">{{page.banner.intro}}</span>{{/if}}
-				<h1>{{page.h1}}</h1>
-			</div>
-			{{/inline}}
-		{{/ukContainer}}
-		{{#> ukContainer size=(default page.banner.sizeBottom (default page.ukContainer ukContainer))}}
-			{{#*inline "out"}}
-			<div class="uk-position-relative">
-				<span class="uk-flex"><span class="uk-text-uppercase uk-flex uk-margin-small-right">Year: </span>{{page.banner.date}}</span>
-				<span>{{page.banner.description}}</span>
-				<img src="{{page.banner.src}}" alt="{{page.banner.alt}}" width="{{page.banner.width}}" height="{{page.banner.height}}" loading="lazy">
-			</div>
-			{{/inline}}
-		{{/ukContainer}}
-	</div>
+	{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
+		{{#*inline "out"}}
+		<div class="uk-text-center uk-position-relative uk-position-z-index">
+			{{#if (eq page.name "home")}}<span class="uk-text-uppercase uk-text-large">{{page.banner.intro}}</span>{{/if}}
+			<h1>{{page.h1}}</h1>
+		</div>
+		{{/inline}}
+	{{/ukContainer}}
+	{{#> ukContainer size=(default page.banner.sizeBottom (default page.ukContainer ukContainer))}}
+		{{#*inline "out"}}
+		<div class="uk-position-relative">
+			<img src="{{page.banner.src}}" alt="{{page.banner.alt}}" width="{{page.banner.width}}" height="{{page.banner.height}}" loading="lazy">
+			<span class="uk-flex"><span class="uk-text-uppercase uk-flex uk-margin-small-right">Year: </span>{{page.banner.date}}</span>
+			<span>{{page.banner.description}}</span>
+		</div>
+		{{/inline}}
+	{{/ukContainer}}
 </div>

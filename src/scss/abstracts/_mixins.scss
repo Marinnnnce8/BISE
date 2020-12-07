@@ -4,12 +4,13 @@
 
 // Background Icon
 @mixin bg-icon($icon) {
-	background-image: url('data:image/svg+xml;utf8,' + $icon);
+	background-image: url('data:image/svg+xml;utf8,'+ $icon);
 	background-repeat: no-repeat;
 }
 
 // Hover
 @mixin hover {
+
 	&:hover,
 	&:focus,
 	&:active,
@@ -43,10 +44,10 @@
 
 //Prevent resizing textarea
 @mixin hook-form-misc {
-    .uk-textarea {
-        min-height: 300px;
-        min-width: 100%;
-    }
+	.uk-textarea {
+		min-height: 300px;
+		min-width: 100%;
+	}
 }
 
 // Page Colours
@@ -57,16 +58,63 @@
 	$property: background-color) {
 	#{$property}: $default;
 
+	&.page-default {
+
+		.uk-button-default,
+		.uk-icon-button {
+			@include hover {
+				color: $default;
+
+				svg {
+					fill: $default;
+				}
+			}
+		}
+	}
+
 	&.page-peat {
 		#{$property}: $peat;
+
+		.uk-button-default,
+		.uk-icon-button {
+			@include hover {
+				color: $peat;
+
+				svg {
+					fill: $peat;
+				}
+			}
+		}
 	}
 
 	&.page-whaling {
 		#{$property}: $whaling;
+
+		.uk-button-default,
+		.uk-icon-button {
+			@include hover {
+				color: $whaling;
+
+				svg {
+					fill: $whaling;
+				}
+			}
+		}
 	}
 
 	&.page-birds {
 		#{$property}: $birds;
+
+		.uk-button-default,
+		.uk-icon-button {
+			@include hover {
+				color: $birds;
+
+				svg {
+					fill: $birds;
+				}
+			}
+		}
 	}
 }
 
@@ -87,6 +135,7 @@
 @import 'uikit/table';
 @import 'uikit/form';
 @import 'uikit/button';
+@import 'uikit/section';
 
 // Layout
 @import 'uikit/card';

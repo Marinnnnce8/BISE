@@ -1,8 +1,8 @@
-<ul class="social uk-list {{#if (eq type "fixed")}}uk-position-fixed uk-position-center-right uk-flex-column{{else}} uk-flex uk-flex-middle uk-flex-wrap{{/if}}">
+<ul class="social uk-list {{#if (eq type "fixed")}}uk-position-fixed uk-position-z-index uk-position-center-right uk-flex-column{{else}} uk-flex uk-flex-middle uk-flex-wrap{{/if}} {{class}}">
 {{#each social}}
 	{{#with this}}
 	<li {{#if (neq type "fixed")}}class="uk-margin-remove-top uk-margin-small-right"{{/if}}>
-		<a href="{{url}}" target="_blank" rel="noopener" class="uk-icon-button" title="Find us on {{name}}">
+		<a href="{{url}}" target="_blank" rel="noopener" class="uk-icon-button uk-overflow-hidden uk-position-relative" title="Find us on {{name}}">
 			{{> renderIcon name=name title=name}}
 		</a>
 	</li>

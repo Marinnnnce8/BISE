@@ -9,5 +9,35 @@
             height: 16px;
             fill: $global-color;
         }
+
+        a {
+            transition: $transition;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 100%;
+                height: 100%;
+                width: 100%;
+                display: block;
+                background-color: $global-color;
+                z-index: 0;
+                transition: $transition;
+            }
+
+            @include hover {
+                &::before {
+                    transform: translateY(-100%);
+                }
+            }
+        }
+    }
+
+    &.uk-position-fixed {
+        .uk-icon-button {
+            width: 45px;
+            height: 45px;
+        }
     }
 }

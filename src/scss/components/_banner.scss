@@ -1,14 +1,14 @@
 .banner {
+	padding-top: $global-gutter;
 
 	.uk-container-xsmall {
-		margin-top: -$global-xlarge-margin - 5;
+		margin-top: -$global-large-gutter + 5px;
 
 		>div>span {
-			position: absolute;
-			top: 50%;
 			font-size: .78rem;
 			line-height: 1.5;
 			letter-spacing: -.02em;
+			position: relative;
 
 			&::before {
 				position: absolute;
@@ -20,13 +20,11 @@
 			}
 
 			&:first-of-type {
-				right: 100%;
 				padding-right: 2 * $global-gutter;
+				margin: $global-margin + 5 0 $global-small-margin;
 
 				&::before {
-					right: $global-small-margin;
-					top: 50%;
-					transform: translateY(-50%);
+					display: none;
 				}
 
 				>span {
@@ -36,34 +34,51 @@
 			}
 
 			&:last-of-type {
-				left: 100%;
-				width: 200px;
 				padding-left: 2 * $global-gutter;
 
 				&::before {
-					left: $global-small-margin;
+					left: 0;
 					top: $global-small-margin;
 				}
 			}
 		}
 	}
 
-	@media (min-width: $breakpoint-small) {
+	@media (min-width: $breakpoint-medium) {
+		padding-top: $global-large-margin + 25;
 
-		&::before {
-			height: 75%;
-		}
-
-		.uk-overlay {
-			padding-bottom: $global-medium-margin;
+		.uk-container-xsmall {
+			margin-top: -$global-xlarge-margin - 5;
 		}
 	}
 
-	@media (min-width: $breakpoint-large) {
+	@media (min-width: 1400px) {
+		.uk-container-xsmall {
+			>div>span {
+				position: absolute;
+				top: 50%;
 
+				&:first-of-type {
+					right: 100%;
+					margin: 0;
 
-		.uk-overlay {
-			padding-bottom: $global-large-margin;
+					&::before {
+						display: block;
+						right: $global-small-margin;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+
+				&:last-of-type {
+					left: 100%;
+					width: 200px;
+
+					&::before {
+						left: $global-small-margin;
+					}
+				}
+			}
 		}
 	}
 }

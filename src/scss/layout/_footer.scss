@@ -53,26 +53,7 @@
 			height: 56px;
 			border: 1px solid $global-color;
 			border-radius: 0;
-			position: relative;
-			overflow: hidden;
-
-			&::before {
-				position: absolute;
-				left: 0;
-				top: 100%;
-				height: 100%;
-				width: 100%;
-				content: '';
-				background-color: $global-color;
-				transition: $transition;
-				z-index: -1;
-			}
-
-			@include hover {
-				&::before {
-					transform: translateY(-100%);
-				}
-			}
+			z-index: 1;
 		}
 	}
 

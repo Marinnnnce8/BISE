@@ -1,6 +1,14 @@
 @mixin hook-base-h1 {
     font-family: $font-serif;
     color: $global-color;
+
+    @media (max-width: $breakpoint-small-max) and (min-width: $breakpoint-xsmall-max) {
+        font-size: 200px;
+    }
+
+    @media (max-width: $breakpoint-xsmall-max) {
+        margin-top: 8px;
+    }
 }
 
 @mixin hook-base-h2 {
@@ -12,6 +20,10 @@
 
 @mixin hook-base-h3 {
     font-family: $font-heavy;
+
+    @media (max-width: $breakpoint-small-max) {
+        font-size: 2.444446rem;
+    }
 }
 
 @mixin hook-base-blockquote {

@@ -21,7 +21,7 @@
 </head>
 <body data-load-components="{{loadComponents}}" class="page-{{#if page.bgColor}}{{page.bgColor}}{{else}}default{{/if}}">
 
-	<header class="header uk-position-relative" data-uk-sticky="media: 1200; animation: uk-animation-slide-top; show-on-up: true;">
+	<header class="header uk-position-relative" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
 		<nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-position-relative" data-uk-navbar>
 
 			<a href="./" class="uk-navbar-item uk-logo uk-padding-remove-horizontal uk-position-center-left">
@@ -52,9 +52,9 @@
 	<main class="uk-margin-bottom">
 		{{> banner}}
 
-		{{> renderSocial type="fixed"}}
+		{{> renderSocial type="fixed" class="uk-visible@m"}}
 
-		<a href="#" class="uk-text-uppercase uk-text-small uk-position-fixed uk-position-center-left uk-position-z-index uk-text-bold nb-share">Share exhibition</a>
+		<a href="#" class="uk-text-uppercase uk-text-small uk-position-fixed uk-position-center-left uk-position-z-index uk-text-bold nb-share uk-visible@m">Share exhibition</a>
 
 		{{#> main}}{{/main}}
 
@@ -65,7 +65,7 @@
 
 			{{#*inline "out"}}
 
-			<h2 class="uk-text-uppercase">Visit The Other Islands</h2>
+			<h2 class="uk-text-uppercase uk-margin-remove-top">Visit The Other Islands</h2>
 
 			<div class="islands">
 				<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
@@ -78,7 +78,7 @@
 			</div>
 
 			<div class="uk-flex uk-flex-middle uk-flex-center contact">
-				<div>
+				<div class="uk-flex uk-flex-center">
 					<a href="#" class="uk-button uk-button-default uk-flex">Contact Us</a>
 				</div>
 				{{> renderSocial}}

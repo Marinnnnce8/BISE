@@ -92,7 +92,7 @@
 		}
 
 		.uk-button {
-			top: 35px;
+			top: 43px;
 			right: 10px;
 			transform: translateY(0);
 			position: absolute;
@@ -100,7 +100,7 @@
 	}
 
 	@media (min-width: $breakpoint-large) {
-		padding: 7px $global-medium-gutter;
+		padding: 7px $global-medium-gutter 0;
 
 		.uk-navbar-container {
 			padding: 0 175px;
@@ -116,6 +116,6 @@
 	}
 
 	@media (min-width: $breakpoint-xlarge) {
-		padding: 7px $global-large-gutter;
+		padding: 7px $global-large-gutter 0;
 	}
 }

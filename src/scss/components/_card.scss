@@ -26,6 +26,7 @@
         img {
             transform: scale3d(1.05, 1.05, 1);
             transition: transform .6s cubic-bezier(.215, .61, .355, 1);
+            width: 100%;
         }
     }
 

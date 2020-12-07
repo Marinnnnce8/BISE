@@ -76,6 +76,7 @@ $base-body-font-weight: 400;
 $base-link-hover-text-decoration: underline;
 $base-strong-font-weight: $bold;
 $base-h1-line-height: 1 !default;
+$base-h1-font-size: 5.55556rem;
 $base-h2-line-height: 1 !default;
 $base-h2-font-size: 2.125rem;
 $base-h3-font-size: 67px;
@@ -110,9 +111,9 @@ $container-xsmall-max-width: 710px;
 $container-small-max-width: 970px;
 $container-large-max-width: 1400px;
 $container-xlarge-max-width: 1600px;
-$container-padding-horizontal: 15px;
-$container-padding-horizontal-s: $global-gutter;
+$container-padding-horizontal: 20px;
 $container-padding-horizontal-m: $global-medium-gutter;
+$container-padding-horizontal-s: $global-margin;
 
 
 //
@@ -133,7 +134,7 @@ $alert-danger-color: $white;
 //
 $grid-gutter-horizontal: $global-gutter;
 $grid-gutter-horizontal-l: $global-medium-gutter;
-$grid-large-gutter-horizontal: $global-medium-gutter;
+$grid-large-gutter-horizontal: $global-margin;
 $grid-large-gutter-horizontal-l: $global-large-gutter;
 
 
@@ -186,6 +187,8 @@ $icon-button-background: transparent;
 //
 $card-body-padding-horizontal-l: 0 $global-large-gutter;
 $card-body-padding-vertical-l: $global-gutter $global-large-gutter;
+$card-body-padding-horizontal: $global-margin;
+$card-body-padding-vertical: $global-margin;
 
 
 //

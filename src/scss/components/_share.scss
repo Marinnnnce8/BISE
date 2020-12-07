@@ -2,6 +2,10 @@
     letter-spacing: .5em;
 
     @media (min-width: $breakpoint-medium) {
+        transform: rotate(-90deg) translate(-10%, -430%);
+    }
+
+    @media (min-width: $breakpoint-xlarge) {
         transform: rotate(-90deg) translate(-10%, -320%);
     }
 
