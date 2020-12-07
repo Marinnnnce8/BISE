@@ -1,0 +1,15 @@
+.cards {
+    @media (min-width: $breakpoint-medium) {
+        &-images {
+            .uk-grid > div {
+                &:nth-of-type(2) .card {
+                    margin-top: 145px;
+                }
+
+                &:nth-of-type(3) .card {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+}
