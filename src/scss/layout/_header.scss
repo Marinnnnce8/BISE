@@ -20,6 +20,7 @@
 		max-height: 64px;
 		margin-top: 13px;
 		z-index: 1002;
+		position: relative;
 
 		span {
 			position: absolute;
@@ -55,6 +56,8 @@
 	}
 
 	.nb-nav[aria-hidden='false']~.uk-navbar-toggle {
+		position: fixed;
+		height: 64px;
 
 		span {
 			background: transparent;
