@@ -34,6 +34,7 @@
 }
 
 @mixin hook-button-default {
+    box-sizing: content-box;
     border: 1px solid $global-color;
     font-weight: 600;
     padding: $global-small-margin $button-padding-horizontal;
@@ -53,6 +54,15 @@
         transition: $transition;
         display: block !important;
         z-index: -1;
+    }
+
+    @media (max-width: $breakpoint-xsmall-max) {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size: .75rem;
+        justify-content: center;
+        max-width: 280px;
+        width: 100%;
     }
 }
 

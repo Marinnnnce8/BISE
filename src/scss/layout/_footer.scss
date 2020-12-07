@@ -1,5 +1,5 @@
 .footer {
-	padding: 170px 0 30px;
+	padding: 170px 0 20px;
 
 	&::before {
 		position: absolute;
@@ -25,7 +25,7 @@
 			content: '';
 			height: 1px;
 			background-color: $global-color;
-			bottom: -8px;
+			bottom: -14px;
 			width: 40px;
 			transition: $transition;
 		}
@@ -44,11 +44,10 @@
 	}
 
 	.contact {
-		margin-bottom: $global-medium-margin + $global-margin;
+		margin-bottom: $global-medium-margin + $global-small-margin;
 	}
 
 	.social {
-
 		a {
 			width: 56px;
 			height: 56px;
@@ -91,11 +90,62 @@
 	}
 
 	&-bottom {
-		margin: $global-large-margin 2 * $global-control-small-height 0;
+		margin: $global-medium-margin + 10 0 0;
 
 		* {
 			font-size: 13px;
 			line-height: 1.5;
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		padding: 170px 0 30px;
+
+		.islands a {
+
+			&::before {
+				bottom: -8px;
+			}
+		}
+
+		.contact {
+			margin-bottom: $global-medium-margin + $global-margin;
+
+			.uk-button {
+				margin-right: $global-medium-margin;
+				padding-top: 18px;
+				padding-bottom: 18px;
+			}
+		}
+
+		&-bottom {
+			margin: $global-large-margin 2 * $global-control-small-height 0;
+		}
+	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		h2 {
+			margin-bottom: 53px;
+		}
+
+		.islands a {
+			margin-bottom: $global-medium-gutter + 12;
+		}
+
+		.contact {
+			flex-direction: column;
+
+			>div {
+				width: 100%;
+			}
+
+			.uk-button {
+				margin-bottom: $global-small-margin;
+			}
+		}
+
+		&-bottom {
+			flex-direction: column;
 		}
 	}
 
@@ -126,13 +176,19 @@
 					content: '';
 					padding: 0;
 				}
+			}
+		}
 
-				@media (max-width: $breakpoint-mobile) {
-					display: block;
+		@media (max-width: $breakpoint-xsmall-max) {
+			margin: $global-margin 0;
+			width: 100%;
 
-					&::after {
-						display: none;
-					}
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li a {
+					font-size: 12px;
 				}
 			}
 		}
