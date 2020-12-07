@@ -1,0 +1,199 @@
+{
+    "bgColor": "peat",
+    "h1": "Peat Cutting",
+    "banner": {
+        "size": "large",
+        "sizeBottom": "xsmall",
+        "intro": "Shetland Exhibition",
+        "src": "./img/fowling-birds-1.jpg",
+        "alt": "image",
+        "width": "708",
+        "height": "988",
+        "date": "1903 ",
+        "description": "Hunting auks in Westray, using the same technique seen in all the Atlantic islands."
+    },
+    "posts": [{
+            "url": "#",
+            "src": "fowling-birds-card-1",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Storm petrels were so oily that Shetlanders could make them into a lamp. A twine was threaded through its body, and the oily flesh allowed the wick to stay alight."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-2",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "In later times, islanders used new technology in fowling. They could shoot birds with guns, and eggs were preserved with isinglass (a solution made from fish bladders), which sealed the shells like varnish.",
+            "marginTop": "large"
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-3",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Equipment depended on the cliffs and the species, and some ledges could only be accessed by manoeuvring with a rope and pole. Auks and puffins were netted whilst flying, while guillemots and fulmars were collected from their nests into a basket.",
+            "marginTop": "small"
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-4",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "An 1804 visitor found the Hoy folk were partial to shearwaters: “The young are very fat, and much relished by the natives.”"
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-5",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Every year St Kilda folk harvested 20,000 gannets, which they wind-dried without salt. They preserved the eggs in peat ash, and drank them raw; they were kept for over six months, by when the eggs were horribly foul."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-6",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Islanders made treatments from birds. Harris people applied great auk fat to the hip for sciatica, and St Kildans used fulmar oil for rheumatism."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-7",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Fulmars were only found in St Kilda for centuries. A 1698 visitor noted the bird had “a delicate taste, a mixture of fat and lean, the flesh white”."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-8",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Puffins were salted in barrels as food in Shetland, and used as bait in St Kilda."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-9",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "For 150 years a box and tackle hauled a man across this 100-foot gap at Noss. A 1695 observer said this “makes a considerable purchase of eggs and fowl”."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-10",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Copinsay’s cliffs impressed a 1774 visitor: “the inhabitants procure vast quantities of eggs of all the different seafowl that frequent the rock… nothing can be more dreadful than to see one let over these cliffs, which makes people unaccustomed to shudder”."
+        },
+        {
+            "url": "#",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Fowling involved terrible danger, nowhere more than St Kilda.",
+            "description": "* [St Kilda cliff man pic., coiled rope artefact] "
+        }
+    ],
+    "quotes": [{
+            "hasSummary": true,
+            "quotation": true,
+            "cite": "“Men of Ness in Lewis sail [to Sulisker] and tarry there 7 or 8 days and fetch with them home their boatfull of dry fowls with wild fowl feathers.”",
+            "quotee": "Donald Monro,",
+            "quoteDetail": "Lewis, 1549"
+        },
+        {
+            "hasSummary": true,
+            "quotation": true,
+            "cite": "“They never trust much to rope nor stake. Once they have got footing, they depend more on their own climbing than any rope… Few who make this practice for life die a natural death.”",
+            "quotee": "George Low,",
+            "quoteDetail": "Foula, 1774"
+        },
+        {
+            "hasSummary": true,
+            "quotation": true,
+            "cite": "“[Shags] are esteemed very good food; it is common practice to bury them for four-and-twenty hours in the earth, which is said to render them tender, and to abstract the fishy taste.”",
+            "quotee": "Patrick Neill,",
+            "quoteDetail": "Birsay, 1804"
+        }
+    ],
+    "postsSecond": [{
+            "url": "#",
+            "src": "fowling-birds-card-11",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "The Hebrideans value traditions more than the Northern Islanders. The ancient gannet hunt continues, licensed as sustainable by Scottish Natural Heritage. Ten Ness men are allowed to hunt on remote Sulisker every August."
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-12",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "The only Atlantic islands where customs survive is Faroe, where around 150,000 birds are harvested every year, mainly fulmar fledglings and puffins, plus guillemots and razorbills are shot in winter.",
+            "marginTop": "large"
+        },
+        {
+            "url": "#",
+            "src": "fowling-birds-card-13",
+            "alt": "image",
+            "width": "",
+            "height": "",
+            "icon": true,
+            "hasSummary": true,
+            "intro": "Collecting eggs used to be part of all our ancestors’ lives. Even if egg collecting was legal, few Northern or Western Islanders would relish them like the Faroese still do.",
+            "marginTop": "small"
+        }
+    ],
+    "postsStories": [{
+            "url": "#",
+            "src": "card-1",
+            "alt": "image",
+			"width": "452",
+			"height": "768",
+            "title": "Whaling",
+            "link": true
+        },
+        {
+            "url": "#",
+            "src": "card-3",
+            "alt": "image",
+			"width": "450",
+			"height": "768",
+            "title": "Peat Cutting",
+            "link": true
+        }
+    ]
+}

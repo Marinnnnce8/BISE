@@ -42,13 +42,28 @@
 				}
 			}
 		}
+
+		.uk-text-large {
+			margin-bottom: 8px;
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		.uk-container-xsmall {
+			margin-top: -$global-xlarge-margin + 40;
+		}
+
+		.uk-text-large {
+			font-size: $global-xlarge-font-size;
+			margin-bottom: $global-margin;
+		}
 	}
 
 	@media (min-width: $breakpoint-medium) {
 		padding-top: $global-large-margin + 25;
 
 		.uk-container-xsmall {
-			margin-top: -$global-xlarge-margin - 5;
+			margin-top: -$global-xlarge-margin + 30;
 		}
 	}
 

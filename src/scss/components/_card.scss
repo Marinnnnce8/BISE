@@ -94,11 +94,6 @@
         position: relative;
         width: 710px;
         margin-right: 60px;
-        flex-shrink: 0;
-
-        .uk-card-body {
-            padding-right: 85px;
-        }
 
         blockquote>.uk-flex {
             margin-bottom: $global-large-gutter;
@@ -136,6 +131,23 @@
 
         &-margin-large-top {
             margin-top: 145px;
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+
+        &-horizontal {
+            .uk-card-body {
+                padding-right: 85px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint-medium-max) {
+        &-horizontal {
+            margin-top: 20px;
+            width: 100%;
         }
     }
 }

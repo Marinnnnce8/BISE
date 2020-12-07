@@ -9,6 +9,11 @@
 @mixin hook-text-large {
     font-family: $font-heavy;
     letter-spacing: .4em;
+    margin-bottom: $global-gutter;
+
+    @media (min-width: $breakpoint-small) {
+        margin-bottom: $global-medium-margin + 10;
+    }
 
     @media (max-width: $breakpoint-xsmall-max) {
         font-size: 24px;

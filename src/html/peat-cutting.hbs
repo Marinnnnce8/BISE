@@ -1,0 +1,206 @@
+{{#> main}}
+{{#*inline "main"}}
+
+<div class="uk-text-center">
+	{{#> ukContainer size="large"}}
+		{{#*inline "out"}}
+			<h2 class="uk-text-uppercase">Why not catch birds?</h2>
+		{{/inline}}
+	{{/ukContainer}}
+</div>
+
+{{#> ukSection size="xsmall"}}
+	{{#*inline "out"}}
+
+		<p class="uk-text-lead">Scotland’s islands are rich in habitats, on holms, cliffs, and beaches. People relied on seabirds’ meat and eggs for food to extend their limited resources. Varied geography meant some districts harvested birds and eggs that other places did not.</p>
+
+		<p>People ate the meat and eggs and used feathers for bedding and fishing lures. At Pabbay, near Harris, puddings made from seafowl fat were towed behind a boat’s stern so the oily surface quelled breaking water. Bird fat was used as a wound dressing for people or livestock, and North Rona people paid rent with smoked wildfowl.</p>
+
+		<p>St Kilda was famed for birds, and people relied on them as others did on fish. Islanders made bait from puffins and lamp oil from fulmars. They made sewing thread from feathers, and shoes from gannets.</p>
+
+	{{/inline}}
+{{/ukSection}}
+
+
+{{#> ukSection size="large" class="card-images"}}
+	{{#*inline "out"}}
+
+		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
+			{{#*inline "cells"}}
+
+			{{#each page.posts}}
+				{{#with this}}
+					<div>
+						{{> card type="post"}}
+					</div>
+				{{/with}}
+			{{/each}}
+
+			{{/inline}}
+		{{/ukGrid}}
+
+	{{/inline}}
+{{/ukSection}}
+
+<div class="horizontal-container">
+	{{#> ukContainer size="xsmall"}}
+		{{#*inline "out"}}
+			<h2 class="uk-text-uppercase uk-text-center">Old Stories</h2>
+		{{/inline}}
+	{{/ukContainer}}
+
+	<div class="uk-position-relative uk-width-1-1 horizontal-holder">
+
+		<div class="horizontal-sticky">
+			<div class="horizontal-inner">
+				<div class="horizontal-cards">
+
+					{{#each page.quotes}}
+						{{#with this}}
+							<div>
+								{{> card type="post"}}
+							</div>
+						{{/with}}
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+	{{#> ukContainer size="large"}}
+		{{#*inline "out"}}
+			<div class="uk-flex uk-flex-center">
+				<svg width="1030" height="455" viewBox="0 0 1030 455" fill="none" xmlns="http://www.w3.org/2000/svg" class="" style="" id="peat-cutting-icon">
+                    <path d="M416.35 345.6H659.05L696.55 272.4H965.35" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_0"></path>
+                    <path d="M294.15 367.2C289.55 367.2 287.65 368.7 282.55 382.2L272.25 410.5H271.35L260.95 382.6L251.45 410.5H250.55L235.75 372.1C233.95 367.6 231.85 367.2 229.75 367.2V366.4H246.65V367.2C241.15 367.2 242.75 372.2 242.85 372.6L253.65 401.9L260.55 381.4L257.25 372.1C255.45 367.6 253.35 367.2 251.25 367.2V366.4H268.15V367.2C262.55 367.2 264.25 372.2 264.35 372.6L274.65 402.1L281.75 382C283.55 376 287.05 367.2 278.25 367.2V366.4H294.15" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_1"></path>
+                    <path d="M357.45 367.2C354.55 367.8 354.35 369 354.35 375.1V402C354.35 407.1 354.15 408.8 357.45 409.7V410.5H346.35V409.7C348.05 409.1 348.15 407.6 348.15 402V389.9H330.95V402C330.95 408.4 331.05 409.1 332.75 409.7V410.5H321.55V409.7C324.85 408.8 324.65 408 324.65 402V375.1C324.65 369.5 324.55 367.8 321.55 367.2V366.4H332.75V367.2C330.95 367.8 330.95 369 330.95 375.1V388.8H348.15V375.1C348.15 369 348.05 367.8 346.35 367.2V366.4H357.45" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_2"></path>
+                    <path d="M425.55 367.2C422.85 367.2 419.55 367.2 412.65 381L407.85 390.8V403.5C407.85 408.6 409.95 409.7 412.55 409.7V410.5H397.35V409.7C399.95 409.7 402.05 408.6 402.05 403.5V392.5C392.85 376.2 390.25 372.1 390.25 372.1C387.45 367.3 385.75 367.3 383.65 367.2V366.4H399.75V367.2C397.95 367.2 394.05 367.1 398.35 374.3L407.55 389.9L412.35 380.1C414.45 375.8 417.95 367.2 409.55 367.2V366.4H425.65" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_3"></path>
+                    <path d="M495.75 395.6C496.45 403.2 499.25 410.3 509.95 410.3C519.45 410.3 520.75 399.7 513.35 394.5L502.95 387.8C496.95 383.8 491.25 378.1 496.15 370.7C496.15 370.7 499.25 365.8 507.95 365.8C517.05 365.8 522.35 368.7 522.35 368.7V379.2H521.45C520.85 373.1 518.45 366.5 507.95 366.5C501.15 366.5 496.05 375.2 505.55 381.4L515.85 388.2C524.25 393.7 525.65 400.7 522.35 405.8C522.35 405.8 519.65 410.9 509.95 410.9C499.75 410.9 495.05 407.4 495.05 407.4V395.4" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_4"></path>
+                    <path d="M591.55 377.4C591.25 367.3 580.85 367.2 579.95 367.2H576.25V404.4C576.25 408.5 578.15 409.7 580.85 409.7V410.5H565.55V409.7C568.15 409.7 570.05 408.6 570.05 404.4V367.2H566.35C564.45 367.2 555.05 367.3 554.85 377.4H554.05V366.4H592.35V377.4" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_5"></path>
+                    <path d="M641.25 410.3C648.15 409.9 653.25 405.2 653.25 388.8C653.25 371.6 647.55 366.7 640.15 366.7C632.65 366.7 626.95 371.7 626.95 388.8C626.95 406 632.65 410.3 640.15 410.3M640.15 411.1C626.35 411.1 619.75 401.3 619.75 388.8C619.75 376.4 626.35 365.9 640.15 365.9C653.95 365.9 660.55 376.4 660.55 388.8C660.55 400.9 654.35 410.5 641.55 411.1H640.15Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_6"></path>
+                    <path d="M702.05 390.9C709.75 390.9 715.95 390.7 715.95 379.1C715.95 367.2 709.35 367.3 702.05 367.3H700.95V390.9M690.65 366.4H701.95C714.45 366.4 722.75 367.9 722.75 379.1C722.75 390.2 714.45 391.7 701.95 391.7H700.85V402C700.85 409.5 703.15 409.8 707.05 409.8V410.6H690.45V409.8C693.55 409.8 694.55 408.2 694.55 402.2V373.2C694.55 368.9 693.65 367.3 690.55 367.3L690.65 366.4Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_7"></path>
+                    <path d="M765.45 397.9C765.05 395.5 764.65 391.4 768.75 388.1C771.55 385.7 774.55 383 773.85 375.6C773.05 366.1 765.65 364.8 760.35 366.9C757.75 367.9 757.95 369.7 758.75 369.8C759.65 369.9 760.25 370.4 760.85 371.1C761.85 372.6 761.45 374.7 760.05 375.7C758.65 376.7 756.45 376.3 755.45 374.8C754.65 373.7 754.85 372.5 755.15 371.4C755.45 370.1 756.95 367.4 759.95 366.1C769.95 361.6 780.25 366 780.75 375.3C781.15 384.4 774.75 388.2 771.25 389.6C768.05 390.9 766.65 393.9 766.95 397.7L765.45 397.9ZM766.65 410.9C764.45 410.9 762.65 409.1 762.65 406.9C762.65 404.7 764.45 403 766.65 403C768.85 403 770.65 404.8 770.65 406.9C770.65 409.1 768.85 410.9 766.65 410.9Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_8"></path>
+                    <path d="M353.35 345.6H404.65" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_9"></path>
+                    <path d="M62.3496 345.6H339.45" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_10"></path>
+                    <path d="M686.149 272.4L653.149 335L643.149 313C647.549 300.4 670.549 263.5 670.549 263.5C670.549 263.5 677.649 259 681.649 258.5C685.649 250.5 754.149 116.5 754.149 116.5C754.149 116.5 748.849 109.5 751.749 100C754.649 90.5 763.149 74 763.149 74C763.149 74 778.149 72 784.649 84C779.149 96 771.149 111 771.149 111C771.149 111 766.049 117.1 759.249 118.5C743.149 153 688.149 262 688.149 262C688.149 262 689.149 266.7 686.149 272.4Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_11"></path>
+                    <path d="M766.75 79.5L778.15 84.5C778.15 84.5 771.65 103.5 764.15 100C756.65 96.5 766.75 79.5 766.75 79.5Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_12"></path>
+                    <path d="M619.75 288.4L625.35 298.1L651.55 252.8L645.85 243.1L619.75 288.4Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_13"></path>
+                    <path d="M400.75 323.1L408.15 334.4L442.65 281.8L435.15 270.5L400.75 323.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_14"></path>
+                    <path d="M378.649 320.3L387.249 329.8L410.749 293.9L402.049 284.4L378.649 320.3Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_15"></path>
+                    <path d="M405.649 279L414.249 288.5L437.749 252.7L429.149 243.2L405.649 279Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_16"></path>
+                    <path d="M477.449 290L484.849 301.3L519.349 248.7L511.849 237.4L477.449 290Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_17"></path>
+                    <path d="M465.25 274.6L473.85 284.1L502.45 234.4L493.85 224.9L465.25 274.6Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_18"></path>
+                    <path d="M369.75 290L377.25 301.3L411.65 248.7L404.25 237.4L369.75 290Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_19"></path>
+                    <path d="M357.649 274.6L366.249 284.1L399.749 237.3L391.149 227.8L357.649 274.6Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_20"></path>
+                    <path d="M465.249 259.8L456.649 269.3L433.149 233.5L441.749 224L465.249 259.8Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_21"></path>
+                    <path d="M468.049 325.5L459.449 335L435.949 299.1L444.649 289.6L468.049 325.5Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_22"></path>
+                    <path d="M481.35 308.1L472.75 317.6L449.25 281.7L457.85 272.2L481.35 308.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_23"></path>
+                    <path d="M521.85 329L513.25 338.5L489.75 302.6L498.45 293.1L521.85 329Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_24"></path>
+                    <path d="M535.15 311.5L526.55 321L503.05 285.1L511.65 275.7L535.15 311.5Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_25"></path>
+                    <path d="M583.15 282L576.65 290.1L558.75 259.3L565.35 251.1L583.15 282Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_26"></path>
+                    <path d="M313.649 150L321.149 161.3L355.549 108.7L348.149 97.3999L313.649 150Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_27"></path>
+                    <path d="M301.55 134.6L310.15 144.1L338.75 94.3999L330.05 84.8999L301.55 134.6Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_28"></path>
+                    <path d="M391.95 136.3L383.35 145.8L359.85 109.9L368.45 100.4L391.95 136.3Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_29"></path>
+                    <path d="M405.249 118.8L396.549 128.3L373.149 92.5L381.749 83L405.249 118.8Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_30"></path>
+                    <path d="M445.749 139.7L437.149 149.2L413.649 113.4L422.249 103.9L445.749 139.7Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_31"></path>
+                    <path d="M459.049 122.3L450.349 131.8L426.949 95.8999L435.549 86.3999L459.049 122.3Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_32"></path>
+                    <path d="M434.449 196L441.949 207.3L472.249 165.7L464.849 154.5L434.449 196Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_33"></path>
+                    <path d="M422.35 180.7L430.95 190.2L465.05 142.1L456.45 132.6L422.35 180.7Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_34"></path>
+                    <path d="M385.85 188.1L393.35 199.4L427.75 146.8L420.35 135.5L385.85 188.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_35"></path>
+                    <path d="M373.75 172.8L382.35 182.3L411.45 140.6L402.75 131.1L373.75 172.8Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_36"></path>
+                    <path d="M272.55 204.1L280.05 215.4L314.45 162.7L307.05 151.5L272.55 204.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_37"></path>
+                    <path d="M260.449 188.7L269.049 198.2L292.449 162.3L283.849 152.8L260.449 188.7Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_38"></path>
+                    <path d="M425.15 231.6L416.55 241.1L393.05 205.2L401.65 195.7L425.15 231.6Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_39"></path>
+                    <path d="M438.35 214.1L429.75 223.6L406.25 187.7L414.85 178.2L438.35 214.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_40"></path>
+                    <path d="M478.95 235L470.35 244.5L446.85 208.6L455.45 199.1L478.95 235Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_41"></path>
+                    <path d="M492.15 217.6L483.55 227.1L460.05 191.2L468.65 181.7L492.15 217.6Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_42"></path>
+                    <path d="M333.649 197.8L341.049 209L375.549 156.4L368.049 145.1L333.649 197.8Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_43"></path>
+                    <path d="M316.149 182.4L324.749 191.9L361.749 136.3L353.149 126.8L316.149 182.4Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_44"></path>
+                    <path d="M317.049 242L308.449 251.5L284.949 215.6L293.549 206.1L317.049 242Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_45"></path>
+                    <path d="M332.249 224.2L323.649 233.7L300.149 197.8L308.749 188.3L332.249 224.2Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_46"></path>
+                    <path d="M378.049 236.7L369.449 246.2L345.949 210.4L354.649 200.9L378.049 236.7Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_47"></path>
+                    <path d="M391.35 219.3L382.75 228.8L359.25 192.9L367.85 183.4L391.35 219.3Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_48"></path>
+                    <path d="M239.449 323.1L246.949 334.4L281.349 281.8L273.949 270.5L239.449 323.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_49"></path>
+                    <path d="M217.35 320.3L225.95 329.8L249.45 293.9L240.85 284.4L217.35 320.3Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_50"></path>
+                    <path d="M244.35 279L252.95 288.5L276.45 252.7L267.85 243.2L244.35 279Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_51"></path>
+                    <path d="M316.149 290L323.649 301.3L361.349 250.2L353.849 238.9L316.149 290Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_52"></path>
+                    <path d="M304.05 274.6L312.65 284.1L345.45 237.7L336.85 228.2L304.05 274.6Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_53"></path>
+                    <path d="M304.049 259.8L295.349 269.3L259.449 223.3L268.049 213.8L304.049 259.8Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_54"></path>
+                    <path d="M306.85 325.5L298.25 335L274.75 299.1L283.35 289.6L306.85 325.5Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_55"></path>
+                    <path d="M320.049 308.1L311.449 317.6L287.949 281.7L296.549 272.2L320.049 308.1Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_56"></path>
+                    <path d="M360.65 329L352.05 338.5L328.55 302.6L337.15 293.1L360.65 329Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_57"></path>
+                    <path d="M373.85 311.5L365.25 321L341.75 285.1L350.35 275.7L373.85 311.5Z" stroke="#054565" stroke-width="0.75" stroke-miterlimit="10" class="SujKXBwI_58"></path>
+                    <style data-made-with="vivus-instant">.SujKXBwI_0{stroke-dasharray:594 596;stroke-dashoffset:595;}.peat-cutting-icon .SujKXBwI_0{animation:SujKXBwI_draw 1333ms linear 0ms forwards;}.SujKXBwI_1{stroke-dasharray:374 376;stroke-dashoffset:375;}.peat-cutting-icon .SujKXBwI_1{animation:SujKXBwI_draw 1333ms linear 11ms forwards;}.SujKXBwI_2{stroke-dasharray:262 264;stroke-dashoffset:263;}.peat-cutting-icon .SujKXBwI_2{animation:SujKXBwI_draw 1333ms linear 22ms forwards;}.SujKXBwI_3{stroke-dasharray:212 214;stroke-dashoffset:213;}.peat-cutting-icon .SujKXBwI_3{animation:SujKXBwI_draw 1333ms linear 34ms forwards;}.SujKXBwI_4{stroke-dasharray:236 238;stroke-dashoffset:237;}.peat-cutting-icon .SujKXBwI_4{animation:SujKXBwI_draw 1333ms linear 45ms forwards;}.SujKXBwI_5{stroke-dasharray:211 213;stroke-dashoffset:212;}.peat-cutting-icon .SujKXBwI_5{animation:SujKXBwI_draw 1333ms linear 57ms forwards;}.SujKXBwI_6{stroke-dasharray:252 254;stroke-dashoffset:253;}.peat-cutting-icon .SujKXBwI_6{animation:SujKXBwI_draw 1333ms linear 68ms forwards;}.SujKXBwI_7{stroke-dasharray:226 228;stroke-dashoffset:227;}.peat-cutting-icon .SujKXBwI_7{animation:SujKXBwI_draw 1333ms linear 80ms forwards;}.SujKXBwI_8{stroke-dasharray:155 157;stroke-dashoffset:156;}.peat-cutting-icon .SujKXBwI_8{animation:SujKXBwI_draw 1333ms linear 91ms forwards;}.SujKXBwI_9{stroke-dasharray:52 54;stroke-dashoffset:53;}.peat-cutting-icon .SujKXBwI_9{animation:SujKXBwI_draw 1333ms linear 103ms forwards;}.SujKXBwI_10{stroke-dasharray:278 280;stroke-dashoffset:279;}.peat-cutting-icon .SujKXBwI_10{animation:SujKXBwI_draw 1333ms linear 114ms forwards;}.SujKXBwI_11{stroke-dasharray:610 612;stroke-dashoffset:611;}.peat-cutting-icon .SujKXBwI_11{animation:SujKXBwI_draw 1333ms linear 126ms forwards;}.SujKXBwI_12{stroke-dasharray:58 60;stroke-dashoffset:59;}.peat-cutting-icon .SujKXBwI_12{animation:SujKXBwI_draw 1333ms linear 137ms forwards;}.SujKXBwI_13{stroke-dasharray:128 130;stroke-dashoffset:129;}.peat-cutting-icon .SujKXBwI_13{animation:SujKXBwI_draw 1333ms linear 149ms forwards;}.SujKXBwI_14{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_14{animation:SujKXBwI_draw 1333ms linear 160ms forwards;}.SujKXBwI_15{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_15{animation:SujKXBwI_draw 1333ms linear 172ms forwards;}.SujKXBwI_16{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_16{animation:SujKXBwI_draw 1333ms linear 183ms forwards;}.SujKXBwI_17{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_17{animation:SujKXBwI_draw 1333ms linear 195ms forwards;}.SujKXBwI_18{stroke-dasharray:141 143;stroke-dashoffset:142;}.peat-cutting-icon .SujKXBwI_18{animation:SujKXBwI_draw 1333ms linear 206ms forwards;}.SujKXBwI_19{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_19{animation:SujKXBwI_draw 1333ms linear 218ms forwards;}.SujKXBwI_20{stroke-dasharray:141 143;stroke-dashoffset:142;}.peat-cutting-icon .SujKXBwI_20{animation:SujKXBwI_draw 1333ms linear 229ms forwards;}.SujKXBwI_21{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_21{animation:SujKXBwI_draw 1333ms linear 241ms forwards;}.SujKXBwI_22{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_22{animation:SujKXBwI_draw 1333ms linear 252ms forwards;}.SujKXBwI_23{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_23{animation:SujKXBwI_draw 1333ms linear 264ms forwards;}.SujKXBwI_24{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_24{animation:SujKXBwI_draw 1333ms linear 275ms forwards;}.SujKXBwI_25{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_25{animation:SujKXBwI_draw 1333ms linear 287ms forwards;}.SujKXBwI_26{stroke-dasharray:93 95;stroke-dashoffset:94;}.peat-cutting-icon .SujKXBwI_26{animation:SujKXBwI_draw 1333ms linear 298ms forwards;}.SujKXBwI_27{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_27{animation:SujKXBwI_draw 1333ms linear 310ms forwards;}.SujKXBwI_28{stroke-dasharray:141 143;stroke-dashoffset:142;}.peat-cutting-icon .SujKXBwI_28{animation:SujKXBwI_draw 1333ms linear 321ms forwards;}.SujKXBwI_29{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_29{animation:SujKXBwI_draw 1333ms linear 333ms forwards;}.SujKXBwI_30{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_30{animation:SujKXBwI_draw 1333ms linear 344ms forwards;}.SujKXBwI_31{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_31{animation:SujKXBwI_draw 1333ms linear 356ms forwards;}.SujKXBwI_32{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_32{animation:SujKXBwI_draw 1333ms linear 367ms forwards;}.SujKXBwI_33{stroke-dasharray:130 132;stroke-dashoffset:131;}.peat-cutting-icon .SujKXBwI_33{animation:SujKXBwI_draw 1333ms linear 379ms forwards;}.SujKXBwI_34{stroke-dasharray:144 146;stroke-dashoffset:145;}.peat-cutting-icon .SujKXBwI_34{animation:SujKXBwI_draw 1333ms linear 390ms forwards;}.SujKXBwI_35{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_35{animation:SujKXBwI_draw 1333ms linear 402ms forwards;}.SujKXBwI_36{stroke-dasharray:128 130;stroke-dashoffset:129;}.peat-cutting-icon .SujKXBwI_36{animation:SujKXBwI_draw 1333ms linear 413ms forwards;}.SujKXBwI_37{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_37{animation:SujKXBwI_draw 1333ms linear 425ms forwards;}.SujKXBwI_38{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_38{animation:SujKXBwI_draw 1333ms linear 436ms forwards;}.SujKXBwI_39{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_39{animation:SujKXBwI_draw 1333ms linear 448ms forwards;}.SujKXBwI_40{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_40{animation:SujKXBwI_draw 1333ms linear 459ms forwards;}.SujKXBwI_41{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_41{animation:SujKXBwI_draw 1333ms linear 471ms forwards;}.SujKXBwI_42{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_42{animation:SujKXBwI_draw 1333ms linear 482ms forwards;}.SujKXBwI_43{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_43{animation:SujKXBwI_draw 1333ms linear 494ms forwards;}.SujKXBwI_44{stroke-dasharray:160 162;stroke-dashoffset:161;}.peat-cutting-icon .SujKXBwI_44{animation:SujKXBwI_draw 1333ms linear 505ms forwards;}.SujKXBwI_45{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_45{animation:SujKXBwI_draw 1333ms linear 517ms forwards;}.SujKXBwI_46{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_46{animation:SujKXBwI_draw 1333ms linear 528ms forwards;}.SujKXBwI_47{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_47{animation:SujKXBwI_draw 1333ms linear 540ms forwards;}.SujKXBwI_48{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_48{animation:SujKXBwI_draw 1333ms linear 551ms forwards;}.SujKXBwI_49{stroke-dasharray:153 155;stroke-dashoffset:154;}.peat-cutting-icon .SujKXBwI_49{animation:SujKXBwI_draw 1333ms linear 563ms forwards;}.SujKXBwI_50{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_50{animation:SujKXBwI_draw 1333ms linear 574ms forwards;}.SujKXBwI_51{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_51{animation:SujKXBwI_draw 1333ms linear 586ms forwards;}.SujKXBwI_52{stroke-dasharray:155 157;stroke-dashoffset:156;}.peat-cutting-icon .SujKXBwI_52{animation:SujKXBwI_draw 1333ms linear 597ms forwards;}.SujKXBwI_53{stroke-dasharray:140 142;stroke-dashoffset:141;}.peat-cutting-icon .SujKXBwI_53{animation:SujKXBwI_draw 1333ms linear 609ms forwards;}.SujKXBwI_54{stroke-dasharray:143 145;stroke-dashoffset:144;}.peat-cutting-icon .SujKXBwI_54{animation:SujKXBwI_draw 1333ms linear 620ms forwards;}.SujKXBwI_55{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_55{animation:SujKXBwI_draw 1333ms linear 632ms forwards;}.SujKXBwI_56{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_56{animation:SujKXBwI_draw 1333ms linear 643ms forwards;}.SujKXBwI_57{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_57{animation:SujKXBwI_draw 1333ms linear 655ms forwards;}.SujKXBwI_58{stroke-dasharray:112 114;stroke-dashoffset:113;}.peat-cutting-icon .SujKXBwI_58{animation:SujKXBwI_draw 1333ms linear 666ms forwards;}@keyframes SujKXBwI_draw{100%{stroke-dashoffset:0;}}@keyframes SujKXBwI_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style>
+                </svg>
+
+			</div>
+		{{/inline}}
+	{{/ukContainer}}
+</div>
+
+{{#> ukSection size="xsmall"}}
+	{{#*inline "out"}}
+
+		<p class="uk-text-lead">Fowling was in harmony with ecology; it continued for thousands of years, and birds remained plentiful. From around 1800 things became commercialised; visiting naturalists collected species for stuffing, and amongst Orkney exports were pens, down, feathers</p>
+
+		<p>After a century of destruction, laws came to protect birds, especially the Wild Birds Protection Order 1902 and the Protection of Birds Act 1954. Today, overfishing, pollution, and habitat loss are new threats to birds.</p>
+
+		<p>Shetland, Orkney, and Hebridean fowling was dying-out before any legislation. As island culture changed, culture drew nearer to outside society, where eating birds and eggs wasn’t mainstream. Also, prosperity meant folk didn’t need to catch wildfowl. Fowling still continues in Faroe, and islanders consider it more ethical to eat birds that haven’t lived their lives like battery hens.</p>
+
+	{{/inline}}
+{{/ukSection}}
+
+{{#> ukSection size="large" class="card-images"}}
+	{{#*inline "out"}}
+
+		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
+			{{#*inline "cells"}}
+
+			{{#each page.postsSecond}}
+				{{#with this}}
+					<div>
+						{{> card type="post"}}
+					</div>
+				{{/with}}
+			{{/each}}
+
+			{{/inline}}
+		{{/ukGrid}}
+
+	{{/inline}}
+{{/ukSection}}
+
+{{#> ukSection size="small"}}
+	{{#*inline "out"}}
+
+		<div class="responsive vm">
+			<iframe src="https://player.vimeo.com/video/63655754?dnt=1&app_id=122963" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Placeholder visual blip"></iframe>
+		</div>
+
+	{{/inline}}
+{{/ukSection}}
+
+{{#> ukSection size="small"}}
+	{{#*inline "out"}}
+
+	{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-margin-bottom"}}
+		{{#*inline "cells"}}
+
+		{{#each page.postsStories}}
+			{{#with this}}
+				<div>
+					{{> card type="post"}}
+				</div>
+			{{/with}}
+		{{/each}}
+
+		{{/inline}}
+	{{/ukGrid}}
+
+	{{/inline}}
+{{/ukSection}}
+
+{{/inline}}
+{{/main}}

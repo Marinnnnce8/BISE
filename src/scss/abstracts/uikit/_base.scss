@@ -1,13 +1,15 @@
 @mixin hook-base-h1 {
     font-family: $font-serif;
+    margin: 0;
     color: $global-color;
 
     @media (max-width: $breakpoint-small-max) and (min-width: $breakpoint-xsmall-max) {
         font-size: 200px;
     }
 
-    @media (max-width: $breakpoint-xsmall-max) {
-        margin-top: 8px;
+    @media (max-width: 1400px) {
+        line-height: 1.2;
+        @include text-truncate;
     }
 }
 
