@@ -1,4 +1,12 @@
 .nb-share {
-    transform: rotate(-90deg) translate(-10%, -320%);
     letter-spacing: .5em;
+
+    @media (min-width: $breakpoint-medium) {
+        transform: rotate(-90deg) translate(-10%, -320%);
+    }
+
+    @media (max-width: $breakpoint-small-max) {
+        line-height: 1.5;
+        margin-bottom: $global-medium-gutter + 5;
+    }
 }

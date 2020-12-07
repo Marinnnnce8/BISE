@@ -1,4 +1,4 @@
-<ul class="social uk-list {{#if (eq type "fixed")}} uk-position-fixed uk-position-center-right uk-flex-column{{else}} uk-flex uk-flex-middle{{/if}}">
+<ul class="social uk-list {{#if (eq type "fixed")}}uk-position-fixed uk-position-center-right uk-flex-column{{else}} uk-flex uk-flex-middle uk-flex-wrap{{/if}}">
 {{#each social}}
 	{{#with this}}
 	<li {{#if (neq type "fixed")}}class="uk-margin-remove-top uk-margin-small-right"{{/if}}>

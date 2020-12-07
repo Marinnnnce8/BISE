@@ -1,26 +1,121 @@
 .header {
-	padding: 7px $global-large-gutter;
+	padding: 0 $global-small-margin;
 
 	.uk-navbar-container {
-		padding: 0 175px;
-		min-height: 100px;
+		padding: 0;
+		min-height: 77px;
+		justify-content: flex-end;
 	}
 
 	.nb-nav-desktop {
 		padding-top: 55px;
 	}
 
-	.uk-button {
-		top: 35px;
-		right: 60px;
-		transform: translateY(0);
-		position: absolute;
+	.uk-logo img {
+		width: 135px;
 	}
 
-	.uk-logo {
+	.uk-navbar-toggle {
+		padding: 0 32px;
+		max-height: 64px;
+		margin-top: 13px;
+		z-index: 1002;
 
-		img {
-			width: 176px;
+		span {
+			position: absolute;
+			left: 50%;
+			width: 25px;
+			height: 2px;
+			background: $global-color;
+			content: '';
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: .1s ease;
+
+			&::after,
+			&::before {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: $global-color;
+				content: '';
+				transition: .1s ease;
+			}
+
+			&::after {
+				top: -7px;
+			}
+
+			&::before {
+				top: 7px;
+				width: 80%;
+			}
 		}
+	}
+
+	.nb-nav[aria-hidden='false']~.uk-navbar-toggle {
+
+		span {
+			background: transparent;
+			transition: .1s ease;
+
+			&::after,
+			&::before {
+				top: 0;
+				transition: .1s ease;
+				background: $secondary;
+			}
+
+			&::after {
+				transform: rotate(45deg);
+				left: 0;
+			}
+
+			&::before {
+				transform: rotate(-45deg);
+				right: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.uk-navbar-container {
+			padding: 0 150px;
+			min-height: 100px;
+			justify-content: center;
+		}
+
+		.uk-logo img {
+			width: 146px;
+		}
+
+		.uk-button {
+			top: 35px;
+			right: 10px;
+			transform: translateY(0);
+			position: absolute;
+		}
+	}
+
+	@media (min-width: $breakpoint-large) {
+		padding: 7px $global-medium-gutter;
+
+		.uk-navbar-container {
+			padding: 0 175px;
+		}
+
+		.uk-logo img {
+			width: 146px;
+		}
+
+		.uk-button {
+			right: 60px;
+		}
+	}
+
+	@media (min-width: $breakpoint-xlarge) {
+		padding: 7px $global-large-gutter;
 	}
 }

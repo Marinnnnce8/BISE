@@ -21,8 +21,8 @@
 </head>
 <body data-load-components="{{loadComponents}}" class="page-{{#if page.bgColor}}{{page.bgColor}}{{else}}default{{/if}}">
 
-	<header class="header uk-position-relative" data-uk-sticky="media: 960; animation: uk-animation-slide-top; show-on-up: true;">
-		<nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-flex-center uk-position-relative" data-uk-navbar>
+	<header class="header uk-position-relative" data-uk-sticky="media: 1200; animation: uk-animation-slide-top; show-on-up: true;">
+		<nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-position-relative" data-uk-navbar>
 
 			<a href="./" class="uk-navbar-item uk-logo uk-padding-remove-horizontal uk-position-center-left">
 				<img src="{{logo}}" alt="{{nb.siteName}} Logo">
@@ -30,15 +30,23 @@
 
 			{{#if menu}}
 				<div id="nav">
+					<a href="./" class="uk-navbar-item uk-logo uk-padding-remove-horizontal uk-position-top-left uk-hidden@m">
+						<img src="./img/logo-mob.png" alt="{{nb.siteName}} Logo">
+					</a>
 					{{> renderNavigation}}
+					<div class="uk-hidden@m uk-flex uk-flex-middle uk-flex-column">
+						<a href="#" class="uk-text-uppercase uk-text-small uk-text-bold nb-share">Share exhibition</a>
+						<a href="#" class="uk-button uk-button-default uk-margin-small-bottom">Contact Us</a>
+						{{> renderSocial}}
+					</div>
 				</div>
-				<a href="#nav" class="uk-navbar-toggle" data-uk-toggle="animation: uk-animation-slide-left;" aria-label="Toggle Navigation" hidden>
-					<span data-uk-navbar-toggle-icon></span>
+				<a href="#nav" class="uk-navbar-toggle uk-position-relative" data-uk-toggle="animation: uk-animation-slide-top;" aria-label="Toggle Navigation" hidden>
+					<span role="presentation"></span>
 				</a>
 			{{/if}}
 
 		</nav>
-		<a href="#" class="uk-button uk-button-default uk-flex">Contact</a>
+		<a href="#" class="uk-button uk-button-default uk-flex uk-visible@m">Contact</a>
 	</header>
 
 	<main class="uk-margin-bottom">
