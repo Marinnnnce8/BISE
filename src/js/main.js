@@ -14,6 +14,15 @@ var main = {
 		var whaleHunting = document.getElementById('whale-hunting-icon');
 		var eggHunting = document.getElementById('egg-hunting-icon');
 		var peatCutting = document.getElementById('peat-cutting-icon');
+		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
+
+		if(isIE11) {
+			return;
+		} else {
+			if(horizontalContainer) {
+				this.addMultiListener(window, 'load resize', main.horizontalScroll);
+			}
+		}
 
 		if(whaleHunting) {
 			new Vivus('whale-hunting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
@@ -25,12 +34,8 @@ var main = {
 			new Vivus('peat-cutting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
 		}
 
-		if(isIE11) {
-			return;
-		} else {
-			if(horizontalContainer) {
-				this.addMultiListener(window, 'load resize', main.horizontalScroll);
-			}
+		if(dataScrollspyElements) {
+			this.removeScrollspy();
 		}
 
 		nb.profilerStart('main.init');
@@ -209,6 +214,17 @@ var main = {
 			spaceHolder.style.height = 100 + "%";
 		}
 	},
+
+	removeScrollspy: function() {
+		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
+		var isTablet = window.matchMedia("(max-width: 1200px)").matches;
+
+		if(isTablet) {
+			for(var i = 0; i <dataScrollspyElements.length;i++) {
+				dataScrollspyElements[i].removeAttribute('data-uk-scrollspy');
+			}
+		}
+	}
 
 };
 
