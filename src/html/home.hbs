@@ -3,29 +3,31 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
-		<p class="uk-text-lead">Visitors to the Western and Northern isles notice the differences: the Hebrides’ vibrant Celtic culture, Orkney’s productive farming, Shetland’s lavish infrastructure. Britain’s Atlantic islands used to share much more in common, with similar folk practices that continued for centuries.</p>
-		<p>This exhibition examines three customs that some folk today might think weren’t “politically correct” – hunting seabirds and eggs, killing whales, harvesting peat. How did islanders use these resources?  Why did they abandon traditions, and what’s to stop their return?</p>
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
+			<p class="uk-text-lead">Visitors to the Western and Northern isles notice the differences: the Hebrides’ vibrant Celtic culture, Orkney’s productive farming, Shetland’s lavish infrastructure. Britain’s Atlantic islands used to share much more in common, with similar folk practices that continued for centuries.</p>
+			<p>This exhibition examines three customs that some folk today might think weren’t “politically correct” – hunting seabirds and eggs, killing whales, harvesting peat. How did islanders use these resources?  Why did they abandon traditions, and what’s to stop their return?</p>
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 
 {{#> ukSection size="large"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
+			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@l uk-margin-bottom"}}
+				{{#*inline "cells"}}
 
-		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@l uk-margin-bottom"}}
-			{{#*inline "cells"}}
+				{{#each page.posts}}
+					{{#with this}}
+						<div>
+							{{> card type="post"}}
+						</div>
+					{{/with}}
+				{{/each}}
 
-			{{#each page.posts}}
-				{{#with this}}
-					<div>
-						{{> card type="post"}}
-					</div>
-				{{/with}}
-			{{/each}}
-
-			{{/inline}}
-		{{/ukGrid}}
-
+				{{/inline}}
+			{{/ukGrid}}
+		</div>
 	{{/inline}}
 {{/ukSection}}
 

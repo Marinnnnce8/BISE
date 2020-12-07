@@ -1,8 +1,13 @@
 .banner {
 	padding-top: $global-gutter;
 
+	.uk-container-large {
+		z-index: 2;
+	}
+
 	.uk-container-xsmall {
 		margin-top: -$global-large-gutter + 5px;
+		z-index: 1;
 
 		>div>span {
 			font-size: .78rem;

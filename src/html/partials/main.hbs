@@ -60,14 +60,14 @@
 
 	</main>
 
-	<footer class="footer uk-position-relative">
+	<footer class="footer uk-position-relative" data-uk-scrollspy="cls: line-draw-animation;">
 		{{#> ukContainer class="uk-text-center"}}
 
 			{{#*inline "out"}}
 
-			<h2 class="uk-text-uppercase uk-margin-remove-top">Visit The Other Islands</h2>
+			<h2 class="uk-text-uppercase uk-margin-remove-top" data-uk-scrollspy="cls:uk-animation-fade">Visit The Other Islands</h2>
 
-			<div class="islands">
+			<div class="islands" data-uk-scrollspy="target: a; cls: uk-animation-fade; delay: 500">
 				<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
 				{{#each islands}}
 					{{#with this}}
@@ -77,14 +77,14 @@
 				</div>
 			</div>
 
-			<div class="uk-flex uk-flex-middle uk-flex-center contact">
+			<div class="uk-flex uk-flex-middle uk-flex-center contact" data-uk-scrollspy="cls:uk-animation-slide-left">
 				<div class="uk-flex uk-flex-center">
 					<a href="#" class="uk-button uk-button-default uk-flex">Contact Us</a>
 				</div>
 				{{> renderSocial}}
 			</div>
 
-			<div class="partners">
+			<div class="partners" data-uk-scrollspy="cls:uk-animation-slide-right">
 				<span class="uk-text-center uk-display-block">Funders & Partners</span>
 				<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
 				{{#each partners}}

@@ -16,13 +16,13 @@ var main = {
 		var peatCutting = document.getElementById('peat-cutting-icon');
 
 		if(whaleHunting) {
-			new Vivus('whale-hunting-icon', {type: 'scenario-sync', duration: 15, start: 'inViewport', dashGap: 20, forceRender: false})
+			new Vivus('whale-hunting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
 		}
 		if(eggHunting) {
-			new Vivus('egg-hunting-icon', {type: 'scenario-sync', duration: 15, start: 'inViewport', dashGap: 20, forceRender: false})
+			new Vivus('egg-hunting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
 		}
 		if(peatCutting) {
-			new Vivus('peat-cutting-icon', {type: 'scenario-sync', duration: 15, start: 'inViewport', dashGap: 20, forceRender: false})
+			new Vivus('peat-cutting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
 		}
 
 		if(isIE11) {

@@ -179,7 +179,8 @@
 			"width": "452",
 			"height": "768",
             "title": "Whaling",
-            "link": true
+            "link": true,
+            "dataUkScrollspy": "slide-top"
         },
         {
             "url": "#",
@@ -188,7 +189,8 @@
 			"width": "450",
 			"height": "768",
             "title": "Peat Cutting",
-            "link": true
+            "link": true,
+            "dataUkScrollspy": "slide-bottom"
         }
     ]
 }

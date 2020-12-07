@@ -160,7 +160,8 @@
 			"width": "453",
 			"height": "678",
             "title": "Whaling",
-            "link": true
+            "link": true,
+            "dataUkScrollspy": "slide-top"
         },
         {
             "url": "#",
@@ -169,7 +170,8 @@
 			"width": "453",
 			"height": "678",
             "title": "Bird Hunting & Egg Collecting",
-            "link": true
+            "link": true,
+            "dataUkScrollspy": "slide-bottom"
         }
     ]
 }

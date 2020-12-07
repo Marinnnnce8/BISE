@@ -1,7 +1,7 @@
 {{#> main}}
 {{#*inline "main"}}
 
-<div class="uk-text-center">
+<div class="uk-text-center" data-uk-scrollspy="target: h2; cls: uk-animation-slide-left;delay:500">
 	{{#> ukContainer size="large"}}
 		{{#*inline "out"}}
 			<h2 class="uk-text-uppercase">Why not catch birds?</h2>
@@ -11,41 +11,47 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
 
-		<p class="uk-text-lead">Scotland’s islands are rich in habitats, on holms, cliffs, and beaches. People relied on seabirds’ meat and eggs for food to extend their limited resources. Varied geography meant some districts harvested birds and eggs that other places did not.</p>
+			<p class="uk-text-lead">Scotland’s islands are rich in habitats, on holms, cliffs, and beaches. People relied on seabirds’ meat and eggs for food to extend their limited resources. Varied geography meant some districts harvested birds and eggs that other places did not.</p>
 
-		<p>People ate the meat and eggs and used feathers for bedding and fishing lures. At Pabbay, near Harris, puddings made from seafowl fat were towed behind a boat’s stern so the oily surface quelled breaking water. Bird fat was used as a wound dressing for people or livestock, and North Rona people paid rent with smoked wildfowl.</p>
+			<p>People ate the meat and eggs and used feathers for bedding and fishing lures. At Pabbay, near Harris, puddings made from seafowl fat were towed behind a boat’s stern so the oily surface quelled breaking water. Bird fat was used as a wound dressing for people or livestock, and North Rona people paid rent with smoked wildfowl.</p>
 
-		<p>St Kilda was famed for birds, and people relied on them as others did on fish. Islanders made bait from puffins and lamp oil from fulmars. They made sewing thread from feathers, and shoes from gannets.</p>
+			<p>St Kilda was famed for birds, and people relied on them as others did on fish. Islanders made bait from puffins and lamp oil from fulmars. They made sewing thread from feathers, and shoes from gannets.</p>
 
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 
 {{#> ukSection size="large" class="cards-images"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
 
-		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
-			{{#*inline "cells"}}
+			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
+				{{#*inline "cells"}}
 
-			{{#each page.posts}}
-				{{#with this}}
-					<div>
-						{{> card type="post"}}
-					</div>
-				{{/with}}
-			{{/each}}
+				{{#each page.posts}}
+					{{#with this}}
+						<div>
+							{{> card type="post"}}
+						</div>
+					{{/with}}
+				{{/each}}
 
-			{{/inline}}
-		{{/ukGrid}}
+				{{/inline}}
+			{{/ukGrid}}
 
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 <div class="horizontal-container">
 	{{#> ukContainer size="xsmall"}}
 		{{#*inline "out"}}
-			<h2 class="uk-text-uppercase uk-text-center">Old Stories</h2>
+			<div class="uk-text-center" data-uk-scrollspy="target: h2; cls: uk-animation-slide-right;delay:500">
+				<h2 class="uk-text-uppercase">Old Stories</h2>
+			</div>
 		{{/inline}}
 	{{/ukContainer}}
 
@@ -153,32 +159,37 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
 
-		<p class="uk-text-lead">Fowling was in harmony with ecology; it continued for thousands of years, and birds remained plentiful. From around 1800 things became commercialised; visiting naturalists collected species for stuffing, and amongst Orkney exports were pens, down, feathers</p>
+			<p class="uk-text-lead">Fowling was in harmony with ecology; it continued for thousands of years, and birds remained plentiful. From around 1800 things became commercialised; visiting naturalists collected species for stuffing, and amongst Orkney exports were pens, down, feathers</p>
 
-		<p>After a century of destruction, laws came to protect birds, especially the Wild Birds Protection Order 1902 and the Protection of Birds Act 1954. Today, overfishing, pollution, and habitat loss are new threats to birds.</p>
+			<p>After a century of destruction, laws came to protect birds, especially the Wild Birds Protection Order 1902 and the Protection of Birds Act 1954. Today, overfishing, pollution, and habitat loss are new threats to birds.</p>
 
-		<p>Shetland, Orkney, and Hebridean fowling was dying-out before any legislation. As island culture changed, culture drew nearer to outside society, where eating birds and eggs wasn’t mainstream. Also, prosperity meant folk didn’t need to catch wildfowl. Fowling still continues in Faroe, and islanders consider it more ethical to eat birds that haven’t lived their lives like battery hens.</p>
+			<p>Shetland, Orkney, and Hebridean fowling was dying-out before any legislation. As island culture changed, culture drew nearer to outside society, where eating birds and eggs wasn’t mainstream. Also, prosperity meant folk didn’t need to catch wildfowl. Fowling still continues in Faroe, and islanders consider it more ethical to eat birds that haven’t lived their lives like battery hens.</p>
 
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 {{#> ukSection size="large" class="cards-images"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
 
-		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
-			{{#*inline "cells"}}
+			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
+				{{#*inline "cells"}}
 
-			{{#each page.postsSecond}}
-				{{#with this}}
-					<div>
-						{{> card type="post"}}
-					</div>
-				{{/with}}
-			{{/each}}
+				{{#each page.postsSecond}}
+					{{#with this}}
+						<div>
+							{{> card type="post"}}
+						</div>
+					{{/with}}
+				{{/each}}
 
-			{{/inline}}
-		{{/ukGrid}}
+				{{/inline}}
+			{{/ukGrid}}
+			
+		</div>
 
 	{{/inline}}
 {{/ukSection}}

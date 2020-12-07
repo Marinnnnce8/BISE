@@ -1,7 +1,7 @@
 {{#> main}}
 {{#*inline "main"}}
 
-<div class="uk-text-center">
+<div class="uk-text-center" data-uk-scrollspy="target: h2; cls: uk-animation-slide-left;delay:500">
 	{{#> ukContainer size="large"}}
 		{{#*inline "out"}}
 			<h2 class="uk-text-uppercase">Why not burn peats?</h2>
@@ -11,41 +11,45 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
+			<p class="uk-text-lead">Peat was essential for life. People used peats in their homes for heating and cooking, and they smoked meat and dried grain with it. Peat was made into coke for forging iron. Peat dust made byre litter for cattle, and its ash was used on kale, for marking sheep, and in stonemasonry.</p>
 
-		<p class="uk-text-lead">Peat was essential for life. People used peats in their homes for heating and cooking, and they smoked meat and dried grain with it. Peat was made into coke for forging iron. Peat dust made byre litter for cattle, and its ash was used on kale, for marking sheep, and in stonemasonry.</p>
+			<p>It was scarce in some districts. Peat covers Shetland, and most of the Hebrides, especially northern Lewis. There’s less in Orkney, with plenty in Rousay, eastern Mainland, and Hoy. Skerries folk boated their peats from Whalsay, North Ronaldsay and Sanday people burnt cow dung instead. The inhabitants of Heiskir also burnt dung, plus straw, and they preferred bread cooked over dried kelp.</p>
 
-		<p>It was scarce in some districts. Peat covers Shetland, and most of the Hebrides, especially northern Lewis. There’s less in Orkney, with plenty in Rousay, eastern Mainland, and Hoy. Skerries folk boated their peats from Whalsay, North Ronaldsay and Sanday people burnt cow dung instead. The inhabitants of Heiskir also burnt dung, plus straw, and they preferred bread cooked over dried kelp.</p>
-
-		<p>Production was similar across the islands. Turf was removed and the peats cut and laid out. Peats were turned and heaped as they dried, then transported home, where they were stacked.</p>
-
+			<p>Production was similar across the islands. Turf was removed and the peats cut and laid out. Peats were turned and heaped as they dried, then transported home, where they were stacked.</p>
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 
 {{#> ukSection size="large" class="cards-images"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
 
-		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
-			{{#*inline "cells"}}
+			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
+				{{#*inline "cells"}}
 
-			{{#each page.posts}}
-				{{#with this}}
-					<div>
-						{{> card type="post"}}
-					</div>
-				{{/with}}
-			{{/each}}
+				{{#each page.posts}}
+					{{#with this}}
+						<div>
+							{{> card type="post"}}
+						</div>
+					{{/with}}
+				{{/each}}
 
-			{{/inline}}
-		{{/ukGrid}}
-
+				{{/inline}}
+			{{/ukGrid}}
+			
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 <div class="horizontal-container">
 	{{#> ukContainer size="xsmall"}}
 		{{#*inline "out"}}
-			<h2 class="uk-text-uppercase uk-text-center">Old Stories</h2>
+			<div class="uk-text-center" data-uk-scrollspy="target: h2; cls: uk-animation-slide-right;delay:500">
+				<h2 class="uk-text-uppercase">Old Stories</h2>
+			</div>
 		{{/inline}}
 	{{/ukContainer}}
 
@@ -142,35 +146,37 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
 
-		<p class="uk-text-lead">There’d be ample peat to sustain life for thousands more years if subsistence methods had continued. Working peats has waned, but it declined long before today’s fixation with carbon reduction. The tradition is alive, but fading.</p>
+			<p class="uk-text-lead">There’d be ample peat to sustain life for thousands more years if subsistence methods had continued. Working peats has waned, but it declined long before today’s fixation with carbon reduction. The tradition is alive, but fading.</p>
 
-		<p>Industry had limited impact from the 1750s onwards, and in all three islands peat fuelled the commercial burning of kelp and production of builders’ lime. Distilleries in the Hebrides and Orkney depended on peat, and Orcadians exported peats to Edinburgh. Most ambitious was the Lewis factory which extracted oil from peats.</p>
+			<p>Industry had limited impact from the 1750s onwards, and in all three islands peat fuelled the commercial burning of kelp and production of builders’ lime. Distilleries in the Hebrides and Orkney depended on peat, and Orcadians exported peats to Edinburgh. Most ambitious was the Lewis factory which extracted oil from peats.</p>
 
-		<p>Islanders’ lives changed from the 1890s onwards. Townsfolk used imported coal, then most people gradually moved from agriculture. By the late 20th century, improvements meant households used oil or electric central heating, and cooked by electricity or gas. Many still work peats, because buying other fuels is expensive whilst peats are free to work, and there’s a nostalgia appeal.</p>
+			<p>Islanders’ lives changed from the 1890s onwards. Townsfolk used imported coal, then most people gradually moved from agriculture. By the late 20th century, improvements meant households used oil or electric central heating, and cooked by electricity or gas. Many still work peats, because buying other fuels is expensive whilst peats are free to work, and there’s a nostalgia appeal.</p>
 
-		<p>Whaling and fowling died-out because islanders adopted outsiders’ notions; will peats go the same way?</p>
-
+			<p>Whaling and fowling died-out because islanders adopted outsiders’ notions; will peats go the same way?</p>
+			
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
 {{#> ukSection size="large" class="cards-images"}}
 	{{#*inline "out"}}
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
+			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
+				{{#*inline "cells"}}
 
-		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
-			{{#*inline "cells"}}
+				{{#each page.postsSecond}}
+					{{#with this}}
+						<div>
+							{{> card type="post"}}
+						</div>
+					{{/with}}
+				{{/each}}
 
-			{{#each page.postsSecond}}
-				{{#with this}}
-					<div>
-						{{> card type="post"}}
-					</div>
-				{{/with}}
-			{{/each}}
-
-			{{/inline}}
-		{{/ukGrid}}
-
+				{{/inline}}
+			{{/ukGrid}}
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
@@ -186,21 +192,19 @@
 
 {{#> ukSection size="small"}}
 	{{#*inline "out"}}
+		{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-margin-bottom"}}
+			{{#*inline "cells"}}
 
-	{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-margin-bottom"}}
-		{{#*inline "cells"}}
+			{{#each page.postsStories}}
+				{{#with this}}
+					<div>
+						{{> card type="post"}}
+					</div>
+				{{/with}}
+			{{/each}}
 
-		{{#each page.postsStories}}
-			{{#with this}}
-				<div>
-					{{> card type="post"}}
-				</div>
-			{{/with}}
-		{{/each}}
-
-		{{/inline}}
-	{{/ukGrid}}
-
+			{{/inline}}
+		{{/ukGrid}}
 	{{/inline}}
 {{/ukSection}}
 

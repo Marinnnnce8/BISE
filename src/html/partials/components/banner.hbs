@@ -1,18 +1,18 @@
-<div class="banner uk-position-relative">
+<div class="banner uk-position-relative" data-uk-scrollspy="target: h1; cls: uk-animation-fade">
 	{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
 		{{#*inline "out"}}
 		<div class="uk-text-center uk-position-relative uk-position-z-index">
-			{{#if (eq page.name "home")}}<span class="uk-text-uppercase uk-text-large">{{page.banner.intro}}</span>{{/if}}
+			{{#if (eq page.name "home")}}<span class="uk-text-uppercase uk-text-large" data-uk-scrollspy="cls:uk-animation-fade">{{page.banner.intro}}</span>{{/if}}
 			<h1>{{page.h1}}</h1>
 		</div>
 		{{/inline}}
 	{{/ukContainer}}
 	{{#> ukContainer size=(default page.banner.sizeBottom (default page.ukContainer ukContainer))}}
 		{{#*inline "out"}}
-		<div class="uk-position-relative">
+		<div class="uk-position-relative" data-uk-scrollspy="cls: uk-animation-fade">
 			<img src="{{page.banner.src}}" alt="{{page.banner.alt}}" width="{{page.banner.width}}" height="{{page.banner.height}}" loading="lazy">
-			<span class="uk-flex"><span class="uk-text-uppercase uk-flex uk-margin-small-right">Year: </span>{{page.banner.date}}</span>
-			<span>{{page.banner.description}}</span>
+			<span class="uk-flex"><span class="uk-text-uppercase uk-flex uk-margin-small-right" data-uk-scrollspy="cls: uk-animation-slide-left">Year: </span>{{page.banner.date}}</span>
+			<span data-uk-scrollspy="cls: uk-animation-slide-right">{{page.banner.description}}</span>
 		</div>
 		{{/inline}}
 	{{/ukContainer}}
