@@ -1,5 +1,11 @@
 .nb-share {
     letter-spacing: .5em;
+    transition: $transition;
+
+    @include hover {
+        text-decoration: none;
+        letter-spacing: .51em;
+    }
 
     @media (min-width: $breakpoint-medium) {
         transform: rotate(-90deg) translate(-10%, -430%);

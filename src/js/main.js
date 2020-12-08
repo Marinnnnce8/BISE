@@ -17,13 +17,13 @@ var main = {
 		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
 		var audioPlay = document.querySelector('.audio-play');
 
-		if(isIE11) {
-			return;
-		} else {
-			if(horizontalContainer) {
-				this.addMultiListener(window, 'load resize', main.horizontalScroll);
-			}
-		}
+		// if(isIE11) {
+		// 	return;
+		// } else {
+		// 	if(horizontalContainer) {
+		// 		this.addMultiListener(window, 'load resize', main.horizontalScroll);
+		// 	}
+		// }
 
 		if(whaleHunting) {
 			new Vivus('whale-hunting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
@@ -188,37 +188,37 @@ var main = {
 		}
 	},
 
-	horizontalScroll: function() {
-		var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
-		var spaceHolder = document.querySelector('.horizontal-holder');
+	// horizontalScroll: function() {
+	// 	var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+	// 	var spaceHolder = document.querySelector('.horizontal-holder');
 
-		if (isDesktop) {
-			var horizontal = document.querySelector('.horizontal-inner');
-			spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+	// 	if (isDesktop) {
+	// 		var horizontal = document.querySelector('.horizontal-inner');
+	// 		spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
 
-			function calcDynamicHeight(ref) {
-				var vw = window.innerWidth;
-				var vh = window.innerHeight;
-				var objectWidth = ref.scrollWidth;
-				return objectWidth - vw + vh + 150;
-			}
+	// 		function calcDynamicHeight(ref) {
+	// 			var vw = window.innerWidth;
+	// 			var vh = window.innerHeight;
+	// 			var objectWidth = ref.scrollWidth;
+	// 			return objectWidth - vw + vh + 150;
+	// 		}
 
-			window.addEventListener('scroll', function () {
-				var sticky = document.querySelector('.horizontal-sticky');
-				horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
-			});
+	// 		window.addEventListener('scroll', function () {
+	// 			var sticky = document.querySelector('.horizontal-sticky');
+	// 			horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+	// 		});
 
-			window.addEventListener('resize', function () {
-				var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
-				if (isDesktop) {
-					spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
-				}
-			});
-		} else {
-			spaceHolder.style.height = 0;
-			spaceHolder.style.height = 100 + "%";
-		}
-	},
+	// 		window.addEventListener('resize', function () {
+	// 			var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+	// 			if (isDesktop) {
+	// 				spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+	// 			}
+	// 		});
+	// 	} else {
+	// 		spaceHolder.style.height = 0;
+	// 		spaceHolder.style.height = 100 + "%";
+	// 	}
+	// },
 
 	removeScrollspy: function() {
 		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
@@ -243,7 +243,6 @@ var main = {
 			var thisElement = e.target;
 			var playerId = thisElement.getAttribute("data-id");
 			var audioElement = document.querySelector("#player" + playerId);
-			console.log(audioElement);
 			
 			if (audioElement.classList.contains("audio-playing")) {
 				audioElement.classList.remove("audio-playing");
@@ -263,8 +262,9 @@ var main = {
 			
 				if (audioElement.currentTime == audioElement.duration) {
 					document.querySelector("#seek" + playerId).querySelector(".audio-seek-dot").style.width = "0";
-					document.querySelector(".audio-playing[data-id='"+ playerId +"']").classList.remove("audio-pause");
-					document.querySelector(".audio-playing[data-id='"+ playerId +"']").classList.add("audio-playing");
+					audioElement.classList.remove("audio-pause");
+					audioElement.classList.add("audio-playing");
+					thisElement.classList.remove("pause");
 				}
 				});
 			} else {

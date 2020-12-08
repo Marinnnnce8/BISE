@@ -9,7 +9,7 @@
 
     @media (max-width: 1400px) {
         line-height: 1.2;
-        // @include text-truncate;
+        @include text-truncate;
     }
 }
 

@@ -1,20 +1,24 @@
 <div class="audio">
     <div class="uk-flex">
-        <img src="./img/{{page.audio.imgSrc}}.jpg" loading="lazy" width="{{page.audio.imgWidth}}" height="{{page.audio.imgHeight}}" alt="{{page.audio.imgAlt}}">
+        <img src="./img/{{page.audio.imgSrc}}.jpg" loading="lazy" width="{{page.audio.imgWidth}}"
+            height="{{page.audio.imgHeight}}" alt="{{page.audio.imgAlt}}">
         <div class="audio-wrapper uk-width-extend">
-            <audio style="display:none;" id="player1" class="audio-playing audio-unmute" src="./img/{{page.audio.src}}" type="audio/mpeg" {{#if preload}}
-                preload="{{page.audio.preload}}" {{/if}}></audio>
+            <audio style="display:none;" id="player1" class="audio-playing audio-unmute" src="./img/{{page.audio.src}}"
+                type="audio/mpeg" {{#if preload}} preload="{{page.audio.preload}}" {{/if}}></audio>
             <div class="audio-inner uk-height-1-1">
                 <div class="audio-player uk-height-1-1 uk-flex uk-flex-middle uk-flex-between">
-                    <button class="audio-play" data-id="1" aria-label="Play audio"><span role="presentation"></span></button>
-                    <div class="audio-time"><span id="currTime1">0:00</span> / <span id="maxTime1">0:00</span></div>
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <button class="audio-play" data-id="1" aria-label="Play audio"><span
+                                role="presentation"></span></button>
+                        <div class="audio-time"><span id="currTime1">0:00</span> / <span id="maxTime1">0:00</span></div>
+                    </div>
                     <div id="seek1" class="audio-seek uk-overflow-hidden uk-position-relative uk-width-1-1">
                         <div class="audio-seek-dot"></div>
                         <div class="audio-seek-bar uk-width-1-1"></div>
                     </div>
                     <button class="audio-sound" data-id="1" aria-label="Mute audio">
                         {{>renderIcon name="sound"}}
-                     </button>
+                    </button>
                 </div>
             </div>
         </div>

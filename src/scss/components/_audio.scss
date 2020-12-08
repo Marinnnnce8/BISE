@@ -17,9 +17,10 @@
     }
 
     &-player {
+        min-height: 65px;
         height: 100%;
-        padding-left: 34px;
-        padding-right: 30px;
+        padding-left: $global-small-margin;
+        padding-right: $global-small-margin;
 
         button {
             display: block;
@@ -32,11 +33,11 @@
     }
 
     &-time {
-        width: 108px;
+        width: 100px;
     }
 
     &-seek {
-        max-width: 280px;
+        max-width: 40%;
 
         &-dot {
             background-color: $white;
@@ -53,15 +54,16 @@
     }
 
     &-play {
-        width: 24px;
         height: 25px;
+        width: 15px;
+        margin-right: $global-small-margin;
         position: relative;
 
         span {
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 12px 0 12px 25px;
+            border-width: 7.5px 0 7.5px 14px;
             border-color: transparent transparent transparent $white;
             display: block;
             transition: $transition;
@@ -70,8 +72,8 @@
             &::before {
                 position: absolute;
                 right: 0;
-                width: 8px;
-                height: 16px;
+                width: 5px;
+                height: 12px;
                 top: 50%;
                 transform: translate(-50%, -50%) scale(0);
                 background-color: $white;
@@ -88,7 +90,7 @@
 
         &.pause {
             span {
-                border-width: 8px 0 8px 8px;
+                border-width: 6px 0 6px 5px;
                 border-color: $white;
 
                 &::before {
@@ -102,6 +104,7 @@
         width: 24px;
         height: 24px;
         position: relative;
+        margin-left: $global-small-margin;
 
         &::before {
             position: absolute;
@@ -120,7 +123,6 @@
             height: 22px;
             fill: $white;
             pointer-events: none;
-            // margin-left: $global-gutter;
         }
 
         @include hover {
@@ -138,9 +140,52 @@
         padding: $global-margin;
     }
 
+    @media (min-width: $breakpoint-small) {
+        &-player {
+            padding-left: 34px;
+            padding-right: 30px;
+        }
+
+        &-seek {
+            max-width: 280px;
+        }
+
+        &-play {
+            width: 24px;
+            margin-right: $global-margin;
+
+            span {
+                border-width: 12px 0 12px 25px;
+
+                &::before {
+                    width: 8px;
+                    height: 16px;
+                }
+            }
+
+            &.pause span {
+                border-width: 8px 0 8px 8px;
+            }
+        }
+
+        &-sound {
+            margin-right: $global-margin;
+        }
+    }
+
     @media (min-width: $breakpoint-medium) {
         &-description {
             padding: $global-medium-margin + 10;
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        >.uk-flex {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
