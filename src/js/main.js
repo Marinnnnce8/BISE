@@ -248,6 +248,7 @@ var main = {
 			if (audioElement.classList.contains("audio-playing")) {
 				audioElement.classList.remove("audio-playing");
 				audioElement.classList.add("audio-pause");
+				thisElement.classList.add("pause");
 				thisElement.setAttribute('aria-label', 'Pause audio');
 				audioElement.play();
 				audioElement.addEventListener("timeupdate", function() {
@@ -269,6 +270,7 @@ var main = {
 			} else {
 				audioElement.classList.remove("audio-pause");
 				audioElement.classList.add("audio-playing");
+				thisElement.classList.remove("pause");
 				thisElement.setAttribute('aria-label', 'Play audio');
 				audioElement.pause();
 			}
@@ -279,16 +281,14 @@ var main = {
 			var playerId = thisElement.getAttribute("data-id");
 			var audioElement = document.querySelector("#player" + playerId);
 
-			if (thisElement.classList.contains("unmute")) {
-				thisElement.classList.remove("unmute");
-				thisElement.classList.add("mute");
-				thisElement.setAttribute('aria-label', 'Unute audio');
-				audioElement.muted = true;
-			} else {
-				thisElement.classList.add("unmute");
+			if (thisElement.classList.contains("mute")) {
 				thisElement.classList.remove("mute");
 				thisElement.setAttribute('aria-label', 'Mute audio');
 				audioElement.muted = false;
+			} else {
+				thisElement.classList.add("mute");
+				thisElement.setAttribute('aria-label', 'Unute audio');
+				audioElement.muted = true;
 			}
 		});
 	}
