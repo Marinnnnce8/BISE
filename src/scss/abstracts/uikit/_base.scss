@@ -3,13 +3,12 @@
     margin: 0;
     color: $global-color;
 
-    @media (max-width: $breakpoint-small-max) and (min-width: $breakpoint-xsmall-max) {
-        font-size: 200px;
-    }
-
     @media (max-width: 1400px) {
         line-height: 1.2;
-        @include text-truncate;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        font-size: 4rem;
     }
 }
 

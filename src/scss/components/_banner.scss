@@ -103,4 +103,16 @@
 			}
 		}
 	}
+
+	@media (min-width: $breakpoint-small-max) and (max-width: $breakpoint-medium-max) {
+		h1 {
+			font-size: 12.3rem;
+		}
+	}
+
+	@media (min-width: $breakpoint-xsmall-max) and (max-width: $breakpoint-small-max) {
+		h1 {
+			font-size: 8.8rem;
+		}
+	}
 }

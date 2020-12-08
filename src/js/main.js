@@ -10,20 +10,15 @@ var main = {
 	init: function() {
 
 		var horizontalContainer = document.getElementsByClassName('horizontal-container')[0];
-		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 		var whaleHunting = document.getElementById('whale-hunting-icon');
 		var eggHunting = document.getElementById('egg-hunting-icon');
 		var peatCutting = document.getElementById('peat-cutting-icon');
 		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
 		var audioPlay = document.querySelector('.audio-play');
 
-		// if(isIE11) {
-		// 	return;
-		// } else {
-		// 	if(horizontalContainer) {
-		// 		this.addMultiListener(window, 'load resize', main.horizontalScroll);
-		// 	}
-		// }
+		if(horizontalContainer) {
+			this.addMultiListener(window, 'load resize', main.horizontalScroll);
+		}
 
 		if(whaleHunting) {
 			new Vivus('whale-hunting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
@@ -188,37 +183,41 @@ var main = {
 		}
 	},
 
-	// horizontalScroll: function() {
-	// 	var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
-	// 	var spaceHolder = document.querySelector('.horizontal-holder');
+	horizontalScroll: function() {
+		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+		if(isIE11) {
+			return;
+		}
+		var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+		var spaceHolder = document.querySelector('.horizontal-holder');
 
-	// 	if (isDesktop) {
-	// 		var horizontal = document.querySelector('.horizontal-inner');
-	// 		spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+		if (isDesktop) {
+			var horizontal = document.querySelector('.horizontal-inner');
+			spaceHolder.style.height = calcDynamicHeight(horizontal) + 'px';
 
-	// 		function calcDynamicHeight(ref) {
-	// 			var vw = window.innerWidth;
-	// 			var vh = window.innerHeight;
-	// 			var objectWidth = ref.scrollWidth;
-	// 			return objectWidth - vw + vh + 150;
-	// 		}
+			function calcDynamicHeight(ref) {
+				var vw = window.innerWidth;
+				var vh = window.innerHeight;
+				var objectWidth = ref.scrollWidth;
+				return objectWidth - vw + vh + 150;
+			}
 
-	// 		window.addEventListener('scroll', function () {
-	// 			var sticky = document.querySelector('.horizontal-sticky');
-	// 			horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
-	// 		});
+			window.addEventListener('scroll', function () {
+				var sticky = document.querySelector('.horizontal-sticky');
+				horizontal.style.transform = 'translateX(-' + sticky.offsetTop + 'px)';
+			});
 
-	// 		window.addEventListener('resize', function () {
-	// 			var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
-	// 			if (isDesktop) {
-	// 				spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
-	// 			}
-	// 		});
-	// 	} else {
-	// 		spaceHolder.style.height = 0;
-	// 		spaceHolder.style.height = 100 + "%";
-	// 	}
-	// },
+			window.addEventListener('resize', function () {
+				var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+				if (isDesktop) {
+					spaceHolder.style.height = calcDynamicHeight(horizontal) + 'px';
+				}
+			});
+		} else {
+			spaceHolder.style.height = 0;
+			spaceHolder.style.height = 100 + "%";
+		}
+	},
 
 	removeScrollspy: function() {
 		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');

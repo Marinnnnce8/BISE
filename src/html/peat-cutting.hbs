@@ -1,13 +1,6 @@
 {{#> main}}
 {{#*inline "main"}}
 
-{{#> ukSection size="xsmall"}}
-	{{#*inline "out"}}
-	<h2 class="uk-text-large uk-text-uppercase">Audio Story</h2>
-		{{>audio }}
-	{{/inline}}
-{{/ukSection}}
-
 <div class="uk-margin-bottom" data-uk-scrollspy="target: h2; cls: uk-animation-slide-left;delay:500">
 	{{#> ukContainer size="large"}}
 		{{#*inline "out"}}
@@ -192,6 +185,13 @@
 			<iframe src="https://player.vimeo.com/video/63655754?dnt=1&app_id=122963" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Placeholder visual blip"></iframe>
 		</div>
 
+	{{/inline}}
+{{/ukSection}}
+
+{{#> ukSection size="xsmall"}}
+	{{#*inline "out"}}
+	<h2 class="uk-text-large uk-text-uppercase">Audio Story</h2>
+		{{>audio }}
 	{{/inline}}
 {{/ukSection}}
 
