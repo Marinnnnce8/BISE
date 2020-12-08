@@ -1,21 +1,6 @@
 .footer {
 	padding: 170px 0 20px;
-
-	&::before {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		top: 0;
-		width: 1px;
-		background-color: $global-color;
-		height: 0;
-		transition: .5s ease-in;
-		content: '';
-	}
-
-	&.line-draw-animation::before {
-		height: 111px;
-	}
+	@include draw-line-animation;
 
 	.uk-text-small {
 		font-size: 16px;

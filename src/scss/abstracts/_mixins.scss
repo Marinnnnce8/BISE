@@ -118,6 +118,26 @@
 	}
 }
 
+@mixin draw-line-animation {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		width: 1px;
+		background-color: $global-color;
+		height: 0;
+		transition: .5s ease-in;
+		content: '';
+	}
+
+	&.line-draw-animation::before {
+		height: 111px;
+	}
+}
+
 
 //
 // UIkit

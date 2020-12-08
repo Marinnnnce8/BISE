@@ -1,7 +1,7 @@
 {{#> main}}
 {{#*inline "main"}}
 
-<div class="uk-text-center" data-uk-scrollspy="target: h2; cls: uk-animation-slide-left;delay:500">
+<div class="uk-margin-bottom" data-uk-scrollspy="target: h2; cls: uk-animation-slide-left;delay:500">
 	{{#> ukContainer size="large"}}
 		{{#*inline "out"}}
 			<h2 class="uk-text-uppercase">Why not catch birds?</h2>
@@ -11,7 +11,7 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
-		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:150">
 
 			<p class="uk-text-lead">Scotland’s islands are rich in habitats, on holms, cliffs, and beaches. People relied on seabirds’ meat and eggs for food to extend their limited resources. Varied geography meant some districts harvested birds and eggs that other places did not.</p>
 
@@ -26,7 +26,7 @@
 
 {{#> ukSection size="large" class="cards-images"}}
 	{{#*inline "out"}}
-		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:150">
 
 			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
 				{{#*inline "cells"}}
@@ -49,9 +49,7 @@
 <div class="horizontal-container">
 	{{#> ukContainer size="xsmall"}}
 		{{#*inline "out"}}
-			<div class="uk-text-center" data-uk-scrollspy="target: h2; cls: uk-animation-slide-right;delay:500">
-				<h2 class="uk-text-uppercase">Old Stories</h2>
-			</div>
+			<h2 class="uk-text-uppercase line" data-uk-scrollspy="cls: line-draw-animation;">Old Stories</h2>
 		{{/inline}}
 	{{/ukContainer}}
 
@@ -159,7 +157,7 @@
 
 {{#> ukSection size="xsmall"}}
 	{{#*inline "out"}}
-		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:350">
+		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:150">
 
 			<p class="uk-text-lead">Fowling was in harmony with ecology; it continued for thousands of years, and birds remained plentiful. From around 1800 things became commercialised; visiting naturalists collected species for stuffing, and amongst Orkney exports were pens, down, feathers</p>
 
@@ -173,7 +171,7 @@
 
 {{#> ukSection size="large" class="cards-images"}}
 	{{#*inline "out"}}
-		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:350">
+		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:150">
 
 			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
 				{{#*inline "cells"}}
@@ -206,6 +204,7 @@
 
 {{#> ukSection size="small"}}
 	{{#*inline "out"}}
+	<h2 class="uk-text-large uk-text-uppercase">Go to next Exhibition...</h2>
 
 	{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-margin-bottom"}}
 		{{#*inline "cells"}}

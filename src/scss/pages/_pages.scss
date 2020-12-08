@@ -1,3 +1,19 @@
 body {
     @include page-colours;
+
+    &.page {
+        &-default {
+            .banner {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: $breakpoint-medium) {
+            &-default {
+                .banner {
+                    margin-bottom: $global-margin;
+                }
+            }
+        }
+    }
 }

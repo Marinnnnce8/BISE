@@ -1,5 +1,6 @@
 .banner {
 	padding-top: $global-gutter;
+	margin-bottom: $global-large-margin;
 
 	.uk-container-large {
 		z-index: 2;
@@ -65,6 +66,7 @@
 	}
 
 	@media (min-width: $breakpoint-medium) {
+		margin-bottom: $global-xlarge-margin;
 		padding-top: $global-large-margin + 25;
 
 		.uk-container-xsmall {
