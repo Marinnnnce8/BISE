@@ -1,0 +1,122 @@
+.audio {
+    border: 1px solid $global-color;
+
+    * {
+        font-size: .88888rem;
+        letter-spacing: 0-.02em;
+        line-height: 1.5;
+    }
+
+    &-wrapper {
+        background-color: $global-color;
+
+        * {
+            color: $white;
+            fill: $white;
+        }
+    }
+
+    &-player {
+        height: 100%;
+        padding-left: 34px;
+        padding-right: 30px;
+
+        button {
+            display: block;
+            outline: none;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+        }
+    }
+
+    &-time {
+        width: 108px;
+    }
+
+    &-seek {
+        max-width: 280px;
+
+        &-dot {
+            background-color: $white;
+            height: 10px;
+        }
+
+        &-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba($white, .3);
+        }
+    }
+
+    .audio-play {
+        width: 24px;
+        height: 25px;
+
+        span {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 0 12px 25px;
+            border-color: transparent transparent transparent $white;
+            display: block;
+            transition: $transition;
+            pointer-events: none;
+        }
+
+        @include hover {
+            >span {
+                border-color: transparent transparent transparent rgba($white, .9);
+            }
+        }
+    }
+
+    .audio-sound {
+        width: 24px;
+        height: 24px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(40deg) scale(0);
+            background-color: $white;
+            content: '';
+            width: 2px;
+            height: 24px;
+            transition: $transition;
+        }
+
+        svg {
+            width: 20px;
+            height: 22px;
+            fill: $white;
+            pointer-events: none;
+            // margin-left: $global-gutter;
+        }
+
+        @include hover {
+            svg {
+                fill: rgba($white, .5);
+            }
+        }
+
+        &.mute::before {
+            transform: translate(-50%, -50%) rotate(40deg) scale(1);
+        }
+    }
+
+    &-description {
+        padding: $global-margin;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        &-description {
+            padding: $global-medium-margin + 10;
+        }
+    }
+}

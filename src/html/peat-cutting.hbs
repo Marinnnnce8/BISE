@@ -1,6 +1,13 @@
 {{#> main}}
 {{#*inline "main"}}
 
+{{#> ukSection size="xsmall"}}
+	{{#*inline "out"}}
+	<h2 class="uk-text-large uk-text-uppercase">Audio Story</h2>
+		{{>audio }}
+	{{/inline}}
+{{/ukSection}}
+
 <div class="uk-margin-bottom" data-uk-scrollspy="target: h2; cls: uk-animation-slide-left;delay:500">
 	{{#> ukContainer size="large"}}
 		{{#*inline "out"}}

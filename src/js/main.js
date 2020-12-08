@@ -15,6 +15,7 @@ var main = {
 		var eggHunting = document.getElementById('egg-hunting-icon');
 		var peatCutting = document.getElementById('peat-cutting-icon');
 		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
+		var audioPlay = document.querySelector('.audio-play');
 
 		if(isIE11) {
 			return;
@@ -36,6 +37,10 @@ var main = {
 
 		if(dataScrollspyElements) {
 			this.removeScrollspy();
+		}
+
+		if(audioPlay) {
+			this.audioPlayer();
 		}
 
 		nb.profilerStart('main.init');
@@ -224,6 +229,68 @@ var main = {
 				dataScrollspyElements[i].removeAttribute('data-uk-scrollspy');
 			}
 		}
+	},
+
+	audioPlayer: function() {
+		function fmtMSS(s) {
+			return (s - (s %= 60)) / 60 + (9 < s ? ":" : ":0") + s;
+		}
+
+		var audioPlay = document.querySelector('.audio-play');
+		var audioSound = document.querySelector('.audio-sound');
+		  
+		audioPlay.addEventListener("click", function(e) {
+			var thisElement = e.target;
+			var playerId = thisElement.getAttribute("data-id");
+			var audioElement = document.querySelector("#player" + playerId);
+			console.log(audioElement);
+			
+			if (audioElement.classList.contains("audio-playing")) {
+				audioElement.classList.remove("audio-playing");
+				audioElement.classList.add("audio-pause");
+				thisElement.setAttribute('aria-label', 'Pause audio');
+				audioElement.play();
+				audioElement.addEventListener("timeupdate", function() {
+				var formatted_curTime = "" + fmtMSS(audioElement.currentTime) + "";
+				var curTime = formatted_curTime.slice(0, 4);
+				var currentTimeEl = document.querySelector("#currTime" + playerId)
+				currentTimeEl.innerHTML = curTime;
+			
+				var seekTime = parseInt(audioElement.currentTime, 10);
+				var seekPerc = parseInt(seekTime) / parseInt(audioElement.duration, 10) * 100;
+				document.querySelector("#seek" + playerId).querySelector(".audio-seek-dot").style.width = "" + seekPerc + "%";
+			
+				if (audioElement.currentTime == audioElement.duration) {
+					document.querySelector("#seek" + playerId).querySelector(".audio-seek-dot").style.width = "0";
+					document.querySelector(".audio-playing[data-id='"+ playerId +"']").classList.remove("audio-pause");
+					document.querySelector(".audio-playing[data-id='"+ playerId +"']").classList.add("audio-playing");
+				}
+				});
+			} else {
+				audioElement.classList.remove("audio-pause");
+				audioElement.classList.add("audio-playing");
+				thisElement.setAttribute('aria-label', 'Play audio');
+				audioElement.pause();
+			}
+		});
+
+		audioSound.addEventListener("click", function(e) {
+			var thisElement = e.target;
+			var playerId = thisElement.getAttribute("data-id");
+			var audioElement = document.querySelector("#player" + playerId);
+
+			if (thisElement.classList.contains("unmute")) {
+				thisElement.classList.remove("unmute");
+				thisElement.classList.add("mute");
+				thisElement.setAttribute('aria-label', 'Unute audio');
+				audioElement.muted = true;
+			} else {
+				thisElement.classList.add("unmute");
+				thisElement.classList.remove("mute");
+				thisElement.setAttribute('aria-label', 'Mute audio');
+				audioElement.muted = false;
+			}
+		});
 	}
 
 };

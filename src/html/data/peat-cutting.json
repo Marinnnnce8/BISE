@@ -114,8 +114,7 @@
             "quoteDetail": "Lochs, 1833."
         }
     ],
-    "postsSecond": [
-        {
+    "postsSecond": [{
             "url": "#",
             "src": "peat-cutting-card-9",
             "alt": "image",
@@ -157,8 +156,8 @@
             "url": "#",
             "src": "card-1",
             "alt": "image",
-			"width": "453",
-			"height": "678",
+            "width": "453",
+            "height": "678",
             "title": "Whaling",
             "link": true,
             "dataUkScrollspy": "slide-top"
@@ -167,11 +166,20 @@
             "url": "#",
             "src": "card-2",
             "alt": "image",
-			"width": "453",
-			"height": "678",
+            "width": "453",
+            "height": "678",
             "title": "Bird Hunting & Egg Collecting",
             "link": true,
             "dataUkScrollspy": "slide-bottom"
         }
-    ]
+    ],
+    "audio": {
+        "src": "audio.mp3",
+        "preload": "auto",
+        "imgSrc": "audio",
+        "imgWidth": "156",
+        "imgHeight": "97",
+        "imgAlt": "image",
+        "text": "Jeemsie Laurenson describes packhorse equipment used in flitting peats at Fetlar in the 1930s."
+    }
 }
