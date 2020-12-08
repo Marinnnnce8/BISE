@@ -31,13 +31,13 @@
 		<nav class="uk-navbar-container uk-navbar uk-navbar-transparent uk-position-relative" data-uk-navbar>
 
 			<a href="./" class="uk-navbar-item uk-logo uk-padding-remove-horizontal uk-position-center-left">
-				<img src="{{logo}}" alt="{{nb.siteName}} Logo">
+				<img src="{{logo}}" width="178" height="93" alt="{{nb.siteName}} Logo">
 			</a>
 
 			{{#if menu}}
 				<div id="nav">
 					<a href="./" class="uk-navbar-item uk-logo uk-padding-remove-horizontal uk-position-top-left uk-hidden@m">
-						<img src="./img/logo-mob.png" alt="{{nb.siteName}} Logo">
+						<img src="./img/logo-mob.png" width="140" height="77" alt="{{nb.siteName}} Logo">
 					</a>
 					{{> renderNavigation}}
 					<div class="uk-hidden@m uk-flex uk-flex-middle uk-flex-column">
@@ -95,7 +95,7 @@
 				<div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
 				{{#each partners}}
 					{{#with this}}
-					<a href="{{url}}" target="_blank" rel="noopener"><img src="./img/{{image}}" alt="{{name}}" loading="lazy"></a>
+					<a href="{{url}}" target="_blank" rel="noopener"><img src="./img/{{image}}" alt="{{name}}" width="{{width}}" height="{{height}}" loading="lazy"></a>
 					{{/with}}
 				{{/each}}
 				</div>

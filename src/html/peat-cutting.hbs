@@ -9,7 +9,7 @@
 	{{/ukContainer}}
 </div>
 
-{{#> ukSection size="xsmall"}}
+{{#> ukSection id="peat-cutting-about" size="xsmall"}}
 	{{#*inline "out"}}
 		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:150">
 			<p class="uk-text-lead">Peat was essential for life. People used peats in their homes for heating and cooking, and they smoked meat and dried grain with it. Peat was made into coke for forging iron. Peat dust made byre litter for cattle, and its ash was used on kale, for marking sheep, and in stonemasonry.</p>
@@ -22,7 +22,7 @@
 {{/ukSection}}
 
 
-{{#> ukSection size="large" class="cards-images"}}
+{{#> ukSection id="peat-cutting-posts" size="large" class="cards-images"}}
 	{{#*inline "out"}}
 		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:150">
 
@@ -142,7 +142,7 @@
 	{{/ukContainer}}
 </div>
 
-{{#> ukSection size="xsmall"}}
+{{#> ukSection id="peat-cutting-info" size="xsmall"}}
 	{{#*inline "out"}}
 		<div data-uk-scrollspy="target: >p; cls: uk-animation-fade;delay:150">
 
@@ -158,7 +158,7 @@
 	{{/inline}}
 {{/ukSection}}
 
-{{#> ukSection size="large" class="cards-images"}}
+{{#> ukSection id="peat-cutting-posts-sec" size="large" class="cards-images"}}
 	{{#*inline "out"}}
 		<div data-uk-scrollspy="target: .uk-card; cls: uk-animation-fade;delay:150">
 			{{#> ukGrid class="uk-grid-large uk-flex uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-bottom" dataUkGrid="masonry: true"}}
@@ -178,24 +178,25 @@
 	{{/inline}}
 {{/ukSection}}
 
-{{#> ukSection size="small"}}
+{{#> ukSection id="peat-cutting-video" size="small"}}
 	{{#*inline "out"}}
-
-		<div class="responsive vm">
-			<iframe src="https://player.vimeo.com/video/63655754?dnt=1&app_id=122963" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="Placeholder visual blip"></iframe>
+		<div class="responsive vm" data-uk-scrollspy="cls: uk-animation-slide-bottom">
+			<iframe src="https://player.vimeo.com/video/63655754?dnt=1&app_id=122963" width="1280" height="720" allow="autoplay; fullscreen" allowfullscreen title="Placeholder visual blip"></iframe>
 		</div>
 
 	{{/inline}}
 {{/ukSection}}
 
-{{#> ukSection size="xsmall"}}
+{{#> ukSection id="peat-cutting-audio" size="xsmall"}}
 	{{#*inline "out"}}
-	<h2 class="uk-text-large uk-text-uppercase">Audio Story</h2>
-		{{>audio }}
+		<div data-uk-scrollspy="cls: uk-animation-fade">
+			<h2 class="uk-text-large uk-text-uppercase">Audio Story</h2>
+			{{>audio }}
+		</div>
 	{{/inline}}
 {{/ukSection}}
 
-{{#> ukSection size="small"}}
+{{#> ukSection id="peat-cutting-exibition" size="small"}}
 	{{#*inline "out"}}
 	<h2 class="uk-text-large uk-text-uppercase">Go to next Exhibition...</h2>
 	

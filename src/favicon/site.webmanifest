@@ -1,6 +1,11 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Between Islands",
+    "short_name": "Between Islands",
+    "start_url": "",
+    "orientation": "portrait-primary",
+    "description": "This exhibition examines three customs that some folk today might think weren’t “politically correct” – hunting seabirds and eggs, killing whales, harvesting peat. How did islanders use these resources? Why did they abandon traditions, and what’s to stop their return?",
+    "dir": "ltr",
+    "lang": "en-GB",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

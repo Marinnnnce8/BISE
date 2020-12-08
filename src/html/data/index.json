@@ -59,31 +59,43 @@
 	],
 	"partners": [{
 			"name": "Between Islands",
+			"width": "528",
+			"height": "312",
 			"url": "#",
 			"image": "preview-gallery-partner-BI-logo.png"
 		},
 		{
 			"name": "An Lanntair",
+			"width": "348",
+			"height": "312",
 			"url": "#",
 			"image": "preview-gallery-partner-AL-logo.png"
 		},
 		{
 			"name": "The European Agricultural Fund for Rural Development",
+			"width": "380",
+			"height": "312",
 			"url": "#",
 			"image": "preview-gallery-partner-TEAFFRD-logo.png"
 		},
 		{
 			"name": "The Scottish Government",
+			"width": "302",
+			"height": "312",
 			"url": "#",
 			"image": "preview-gallery-partner-TSG-logo.png"
 		},
 		{
 			"name": "Scottish Rural Development Programme",
+			"width": "342",
+			"height": "142",
 			"url": "#",
 			"image": "preview-gallery-partner-SRDP-logo.png"
 		},
 		{
 			"name": "Leader",
+			"width": "306",
+			"height": "312",
 			"url": "#",
 			"image": "preview-gallery-partner-LD-logo.png"
 		}

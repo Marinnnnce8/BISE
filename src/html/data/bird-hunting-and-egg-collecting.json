@@ -13,6 +13,7 @@
     },
     "posts": [{
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-1",
             "alt": "image",
             "width": "450",
@@ -23,6 +24,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-2",
             "alt": "image",
             "width": "450",
@@ -33,6 +35,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-3",
             "alt": "image",
             "width": "450",
@@ -43,6 +46,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-4",
             "alt": "image",
             "width": "450",
@@ -53,6 +57,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-5",
             "alt": "image",
             "width": "450",
@@ -63,6 +68,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-6",
             "alt": "image",
             "width": "450",
@@ -73,6 +79,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-7",
             "alt": "image",
             "width": "450",
@@ -83,6 +90,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-8",
             "alt": "image",
             "width": "450",
@@ -93,6 +101,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-9",
             "alt": "image",
             "width": "450",
@@ -103,6 +112,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-10",
             "alt": "image",
             "width": "450",
@@ -113,6 +123,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "icon": true,
             "hasSummary": true,
             "intro": "Fowling involved terrible danger, nowhere more than St Kilda.",
@@ -143,6 +154,7 @@
     ],
     "postsSecond": [{
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-11",
             "alt": "image",
             "width": "450",
@@ -153,6 +165,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-12",
             "alt": "image",
             "width": "450",
@@ -163,6 +176,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more",
             "src": "fowling-birds-card-13",
             "alt": "image",
             "width": "450",
@@ -174,6 +188,7 @@
     ],
     "postsStories": [{
             "url": "#",
+            "label": "Find out more about whaling",
             "src": "card-1",
             "alt": "image",
 			"width": "452",
@@ -184,6 +199,7 @@
         },
         {
             "url": "#",
+            "label": "Find out more about peat cutting",
             "src": "card-3",
             "alt": "image",
 			"width": "450",
