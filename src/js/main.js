@@ -188,7 +188,7 @@ var main = {
 		if(isIE11) {
 			return;
 		}
-		var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+		var isDesktop = window.matchMedia("(min-width: 1200px)").matches;
 		var spaceHolder = document.querySelector('.horizontal-holder');
 
 		if (isDesktop) {
@@ -203,12 +203,20 @@ var main = {
 			}
 
 			window.addEventListener('scroll', function () {
+				var horizontalTitle = document.querySelector('.horizontal-title');
 				var sticky = document.querySelector('.horizontal-sticky');
 				horizontal.style.transform = 'translateX(-' + sticky.offsetTop + 'px)';
+
+				var dynamicHeight = calcDynamicHeight(horizontal);
+				if(sticky.offsetTop > dynamicHeight / 1.2){
+					horizontalTitle.setAttribute("data-uk-sticky", "bottom: #sticky-stop");
+				} else {
+					horizontalTitle.setAttribute("data-uk-sticky", "");
+				}
 			});
 
 			window.addEventListener('resize', function () {
-				var isDesktop = window.matchMedia("(min-width: 1201px)").matches;
+				var isDesktop = window.matchMedia("(min-width: 1200px)").matches;
 				if (isDesktop) {
 					spaceHolder.style.height = calcDynamicHeight(horizontal) + 'px';
 				}

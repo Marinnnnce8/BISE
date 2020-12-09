@@ -6,6 +6,18 @@ screen and (-ms-high-contrast: none) {
 
     .horizontal {
 
+        &-container {
+            h2 {
+                &:first-of-type {
+                    display: none;
+                }
+
+                &:last-of-type {
+                    display: block;
+                }
+            }
+        }
+
         &-sticky {
             position: relative;
             top: auto;
@@ -58,6 +70,7 @@ screen and (-ms-high-contrast: none) {
 
     .uk-navbar-nav>li>a {
         transition: $transition;
+
         @include hover {
             color: rgba($global-color, .85);
         }

@@ -3,16 +3,35 @@
         position: relative;
         width: 100%;
         min-height: 520px;
+
+        h2:last-of-type {
+            display: none;
+        }
     }
 
     &-sticky {
         width: 100%;
     }
 
+    &-stop {
+        display: none;
+    }
+
     @media (min-width: $breakpoint-large) {
+        &-stop {
+            height: 1px;
+            position: absolute;
+            top: 68%;
+            display: block;
+            right: 0;
+            width: 1px;
+            background-color: transparent;
+            pointer-events: none;
+        }
+
         &-sticky {
             position: sticky;
-            top: 0;
+            top: 320px;
             height: 520px;
             overflow-x: hidden;
         }
@@ -41,6 +60,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        &-title {
+            margin-bottom: $global-medium-margin;
         }
     }
 

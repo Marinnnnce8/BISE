@@ -128,13 +128,19 @@
 		top: 0;
 		width: 1px;
 		background-color: $global-color;
-		height: 0;
+		height: 111px;
 		transition: .5s ease-in;
 		content: '';
 	}
 
 	&.line-draw-animation::before {
 		height: 111px;
+	}
+
+	@media (min-width: $breakpoint-large) {
+		&::before {
+			height: 0;
+		}
 	}
 }
 
