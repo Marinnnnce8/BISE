@@ -86,7 +86,8 @@ $base-blockquote-font-style: normal !default;
 $base-blockquote-margin-vertical: $global-gutter;
 $base-code-color: inherit;
 $base-em-color: inherit;
-$base-selection-background: $secondary;
+$base-selection-background: $global-color;
+$base-selection-color: $secondary;
 
 
 //

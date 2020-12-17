@@ -208,7 +208,7 @@ var main = {
 				horizontal.style.transform = 'translateX(-' + sticky.offsetTop + 'px)';
 
 				var dynamicHeight = calcDynamicHeight(horizontal);
-				if(sticky.offsetTop > dynamicHeight / 1.2){
+				if(sticky.offsetTop > dynamicHeight / 1.25){
 					horizontalTitle.setAttribute("data-uk-sticky", "bottom: #sticky-stop");
 				} else {
 					horizontalTitle.setAttribute("data-uk-sticky", "");
