@@ -9,16 +9,11 @@ var main = {
 
 	init: function() {
 
-		var horizontalContainer = document.getElementsByClassName('horizontal-container')[0];
 		var whaleHunting = document.getElementById('whale-hunting-icon');
 		var eggHunting = document.getElementById('egg-hunting-icon');
 		var peatCutting = document.getElementById('peat-cutting-icon');
 		var dataScrollspyElements = document.querySelectorAll('[data-uk-scrollspy]');
 		var audioPlay = document.querySelector('.audio-play');
-
-		if(horizontalContainer) {
-			this.addMultiListener(window, 'load resize', main.horizontalScroll);
-		}
 
 		if(whaleHunting) {
 			new Vivus('whale-hunting-icon', {type: 'scenario-sync', duration: 3, start: 'inViewport', dashGap: 20, forceRender: false})
@@ -180,50 +175,6 @@ var main = {
 		var events = eventNames.split(' ');
 		for (var i=0, iLen=events.length; i<iLen; i++) {
 			element.addEventListener(events[i], listener, false);
-		}
-	},
-
-	horizontalScroll: function() {
-		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-		if(isIE11) {
-			return;
-		}
-		var isDesktop = window.matchMedia("(min-width: 1200px)").matches;
-		var spaceHolder = document.querySelector('.horizontal-holder');
-
-		if (isDesktop) {
-			var horizontal = document.querySelector('.horizontal-inner');
-			spaceHolder.style.height = calcDynamicHeight(horizontal) + 'px';
-
-			function calcDynamicHeight(ref) {
-				var vw = window.innerWidth;
-				var vh = window.innerHeight;
-				var objectWidth = ref.scrollWidth;
-				return objectWidth - vw + vh + 150;
-			}
-
-			window.addEventListener('scroll', function () {
-				var horizontalTitle = document.querySelector('.horizontal-title');
-				var sticky = document.querySelector('.horizontal-sticky');
-				horizontal.style.transform = 'translateX(-' + sticky.offsetTop + 'px)';
-
-				var dynamicHeight = calcDynamicHeight(horizontal);
-				if(sticky.offsetTop > dynamicHeight / 1.25){
-					horizontalTitle.setAttribute("data-uk-sticky", "bottom: #sticky-stop");
-				} else {
-					horizontalTitle.setAttribute("data-uk-sticky", "");
-				}
-			});
-
-			window.addEventListener('resize', function () {
-				var isDesktop = window.matchMedia("(min-width: 1200px)").matches;
-				if (isDesktop) {
-					spaceHolder.style.height = calcDynamicHeight(horizontal) + 'px';
-				}
-			});
-		} else {
-			spaceHolder.style.height = 0;
-			spaceHolder.style.height = 100 + "%";
 		}
 	},
 

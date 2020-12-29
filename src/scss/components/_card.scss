@@ -31,7 +31,7 @@
     }
 
     &-post {
-        &:not(.card-image):not(.card-horizontal) {
+        &:not(.card-image):not(.card-story) {
             position: relative;
             height: 100%;
 
@@ -89,11 +89,8 @@
         }
     }
 
-    &-horizontal {
+    &-story {
         background-color: $global-secondary-background;
-        position: relative;
-        width: 710px;
-        margin-right: 60px;
 
         blockquote>.uk-flex {
             margin-bottom: $global-large-gutter;
@@ -126,7 +123,7 @@
 
     @media (min-width: $breakpoint-large) {
 
-        &-horizontal {
+        &-story {
             .uk-card-body {
                 padding-right: 85px;
                 flex-shrink: 0;
@@ -135,7 +132,7 @@
     }
 
     @media (max-width: $breakpoint-medium-max) {
-        &-horizontal {
+        &-story {
             margin-top: 20px;
             width: 100%;
         }

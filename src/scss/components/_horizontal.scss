@@ -1,75 +1,67 @@
-.horizontal {
-    &-container {
-        position: relative;
-        width: 100%;
-        min-height: 520px;
+// .horizontal {
+//     // &-container {
+//     //     position: relative;
+//     //     width: 100%;
+//     // }
 
-        h2:last-of-type {
-            display: none;
-        }
-    }
+//     // &-sticky {
+//     //     width: 100%;
+//     // }
 
-    &-sticky {
-        width: 100%;
-    }
+//     // &-stop {
+//     //     display: none;
+//     // }
 
-    &-stop {
-        display: none;
-    }
+//     // @media (min-width: $breakpoint-large) {
+//     //     &-sticky {
+//     //         position: relative;
+//     //         top: auto;
+//     //         height: auto;
+//     //         overflow-x: visible;
+//     //         max-width: 1400px;
+//     //         padding: 50px 40px 0;
+//     //         margin: 0 auto;
+//     //     }
 
-    @media (min-width: $breakpoint-large) {
-        &-stop {
-            height: 1px;
-            position: absolute;
-            top: 68%;
-            display: block;
-            right: 0;
-            width: 1px;
-            background-color: transparent;
-            pointer-events: none;
-        }
+//     //     &-inner {
+//     //         position: relative;
+//     //         height: 100%;
+//     //         padding-left: 0;
+//     //     }
 
-        &-sticky {
-            position: sticky;
-            top: 320px;
-            height: 520px;
-            overflow-x: hidden;
-        }
+//     //     &-cards {
+//     //         position: relative;
+//     //         height: 100%;
+//     //         padding: 0;
+//     //         display: flex;
+//     //         flex-flow: row nowrap;
+//     //         justify-content: flex-start;
+//     //         align-items: flex-start;
+//     //         margin-left: -60px;
 
-        &-inner {
-            position: absolute;
-            height: 100%;
-            will-change: transform;
-            padding-left: 85vw;
-        }
+//     //         >div {
+//     //             padding-left: 60px;
+//     //             width: calc(100% / 3);
+//     //         }
+//     //     }
+//     // }
 
-        &-cards {
-            position: relative;
-            height: 100%;
-            padding: 0 0 0 150px;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-    }
+//     @media (max-width: $breakpoint-medium-max) {
+//         &-cards {
+//             padding: 0 40px;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//         }
 
-    @media (max-width: $breakpoint-medium-max) {
-        &-cards {
-            padding: 0 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+//         &-title {
+//             margin-bottom: $global-medium-margin;
+//         }
+//     }
 
-        &-title {
-            margin-bottom: $global-medium-margin;
-        }
-    }
-
-    @media (max-width: $breakpoint-xsmall-max) {
-        &-cards {
-            padding: 0 20px;
-        }
-    }
-}
+//     @media (max-width: $breakpoint-xsmall-max) {
+//         &-cards {
+//             padding: 0 20px;
+//         }
+//     }
+// }

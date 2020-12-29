@@ -1,0 +1,7 @@
+.stories {
+    @media (min-width: $breakpoint-medium-max) {
+        h2 {
+            margin-bottom: $global-large-margin + 30;
+        }
+    }
+}

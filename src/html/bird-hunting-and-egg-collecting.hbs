@@ -46,33 +46,34 @@
 	{{/inline}}
 {{/ukSection}}
 
-<div class="horizontal-container">
+<div class="stories">
 	{{#> ukContainer size="xsmall"}}
 		{{#*inline "out"}}
-			<h2 class="uk-text-uppercase line horizontal-title" data-uk-scrollspy="cls: line-draw-animation;" data-uk-sticky="media: @l">Old Stories</h2>
-			<h2 class="uk-text-uppercase line horizontal-title" data-uk-scrollspy="cls: line-draw-animation;">Old Stories</h2>
+            <div>
+                <h2 class="uk-text-uppercase line" data-uk-scrollspy="cls: line-draw-animation;">Old Stories</h2>
+            </div>
 		{{/inline}}
 	{{/ukContainer}}
 
-	<span id="sticky-stop" class="horizontal-stop" role="presentation"></span>
+    {{#> ukContainer size="large"}}
+		{{#*inline "out"}}
 
-	<div class="uk-position-relative uk-width-1-1 horizontal-holder">
+            {{#> ukGrid class="uk-grid-large uk-flex-wrap uk-child-width-1-3@l uk-child-width-1-2@s uk-margin-bottom"}}
+				{{#*inline "cells"}}
 
-		<div class="horizontal-sticky">
-			<div class="horizontal-inner">
-				<div class="horizontal-cards">
-
-					{{#each page.quotes}}
+                	{{#each page.quotes}}
 						{{#with this}}
 							<div>
 								{{> card type="post"}}
 							</div>
 						{{/with}}
 					{{/each}}
-				</div>
-			</div>
-		</div>
-	</div>
+
+                {{/inline}}
+			{{/ukGrid}}        
+
+        {{/inline}}
+	{{/ukContainer}}
 </div>
 
 <div>
